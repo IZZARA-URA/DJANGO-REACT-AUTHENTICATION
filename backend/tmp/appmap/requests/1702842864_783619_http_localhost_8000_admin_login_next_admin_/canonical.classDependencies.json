@@ -1,0 +1,10 @@
+[
+  {
+    "caller": "GET /admin/login/",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesJazzminTemplatesAdminLoginHtml#render"
+  },
+  {
+    "caller": "GET /admin/login/",
+    "callee": "django/contrib"
+  }
+]

@@ -1,0 +1,5 @@
+[
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkApiHtml",
+  "django/contrib/auth",
+  "django/contrib/auth::backends/ModelBackend"
+]

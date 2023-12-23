@@ -1,0 +1,3 @@
+[
+  "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > ? AND \"django_session\".\"session_key\" = ?) LIMIT ?"
+]

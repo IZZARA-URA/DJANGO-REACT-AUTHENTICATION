@@ -1,0 +1,90 @@
+[
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsErrorsListDefaultHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsErrorsListUlHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsLabelHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsAttrsHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelectHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelectHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelect_OptionHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelect_OptionHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsTextareaHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkApiHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkRaw_Data_FormHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkHorizontalFormHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkHorizontalInputHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkRaw_Data_FormHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsErrorsListDefaultHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkRaw_Data_FormHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsLabelHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkRaw_Data_FormHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelectHtml#render"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkRaw_Data_FormHtml#render",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsTextareaHtml#render"
+  },
+  {
+    "caller": "POST /api/register/",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkApiHtml#render"
+  },
+  {
+    "caller": "POST /api/register/",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkHorizontalFormHtml#render"
+  },
+  {
+    "caller": "POST /api/register/",
+    "callee": "INSERT INTO \"api_profile\" (\"user_id\", \"full_name\", \"bio\", \"image\", \"verified\") VALUES (2, '', '', 'default.jpg', 0) RETURNING \"api_profile\".\"id\""
+  },
+  {
+    "caller": "POST /api/register/",
+    "callee": "INSERT INTO \"api_user\" (\"password\", \"last_login\", \"is_superuser\", \"first_name\", \"last_name\", \"is_staff\", \"is_active\", \"date_joined\", \"username\", \"email\") VALUES ('', NULL, 0, '', '', 0, 1, '2023-12-17 19:57:17.917296', 'test01', 'test01@gmial.com') RETURNING \"api_user\".\"id\""
+  },
+  {
+    "caller": "POST /api/register/",
+    "callee": "SELECT 1 AS \"a\" FROM \"api_user\" WHERE \"api_user\".\"email\" = 'test01@gmial.com' LIMIT 1"
+  },
+  {
+    "caller": "POST /api/register/",
+    "callee": "SELECT \"api_user\".\"id\", \"api_user\".\"password\", \"api_user\".\"last_login\", \"api_user\".\"is_superuser\", \"api_user\".\"first_name\", \"api_user\".\"last_name\", \"api_user\".\"is_staff\", \"api_user\".\"is_active\", \"api_user\".\"date_joined\", \"api_user\".\"username\", \"api_user\".\"email\" FROM \"api_user\" WHERE \"api_user\".\"id\" = 1 LIMIT 21"
+  },
+  {
+    "caller": "POST /api/register/",
+    "callee": "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > '2023-12-17 19:57:17.907297' AND \"django_session\".\"session_key\" = '93kjqmbudf7gooj6opo3ym7w3zc5zoax') LIMIT 21"
+  },
+  {
+    "caller": "POST /api/register/",
+    "callee": "UPDATE \"api_profile\" SET \"user_id\" = 2, \"full_name\" = '', \"bio\" = '', \"image\" = 'default.jpg', \"verified\" = 0 WHERE \"api_profile\".\"id\" = 2"
+  },
+  {
+    "caller": "POST /api/register/",
+    "callee": "UPDATE \"api_user\" SET \"password\" = 'pbkdf2_sha256$600000$reDsCok7jlCk3MKguvDx9z$eEgLmnd6SqfQBFBRXhyopmDSQSHS0/J1KS0yqBdQfms=', \"last_login\" = NULL, \"is_superuser\" = 0, \"first_name\" = '', \"last_name\" = '', \"is_staff\" = 0, \"is_active\" = 1, \"date_joined\" = '2023-12-17 19:57:17.917296', \"username\" = 'test01', \"email\" = 'test01@gmial.com' WHERE \"api_user\".\"id\" = 2"
+  },
+  {
+    "caller": "POST /api/register/",
+    "callee": "django/contrib"
+  }
+]

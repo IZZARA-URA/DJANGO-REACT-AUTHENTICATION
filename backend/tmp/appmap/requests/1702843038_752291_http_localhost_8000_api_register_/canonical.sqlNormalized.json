@@ -1,0 +1,9 @@
+[
+  "INSERT INTO \"api_profile\" (\"user_id\", \"full_name\", \"bio\", \"image\", \"verified\") VALUES (?, ?, ?, ?, ?) RETURNING \"api_profile\".\"id\"",
+  "INSERT INTO \"api_user\" (\"password\", \"last_login\", \"is_superuser\", \"first_name\", \"last_name\", \"is_staff\", \"is_active\", \"date_joined\", \"username\", \"email\") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING \"api_user\".\"id\"",
+  "SELECT ? AS \"a\" FROM \"api_user\" WHERE \"api_user\".\"email\" = ? LIMIT ?",
+  "SELECT \"api_user\".\"id\", \"api_user\".\"password\", \"api_user\".\"last_login\", \"api_user\".\"is_superuser\", \"api_user\".\"first_name\", \"api_user\".\"last_name\", \"api_user\".\"is_staff\", \"api_user\".\"is_active\", \"api_user\".\"date_joined\", \"api_user\".\"username\", \"api_user\".\"email\" FROM \"api_user\" WHERE \"api_user\".\"id\" = ? LIMIT ?",
+  "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > ? AND \"django_session\".\"session_key\" = ?) LIMIT ?",
+  "UPDATE \"api_profile\" SET \"user_id\" = ?, \"full_name\" = ?, \"bio\" = ?, \"image\" = ?, \"verified\" = ? WHERE \"api_profile\".\"id\" = ?",
+  "UPDATE \"api_user\" SET \"password\" = ?, \"last_login\" = ?, \"is_superuser\" = ?, \"first_name\" = ?, \"last_name\" = ?, \"is_staff\" = ?, \"is_active\" = ?, \"date_joined\" = ?, \"username\" = ?, \"email\" = ? WHERE \"api_user\".\"id\" = ?"
+]

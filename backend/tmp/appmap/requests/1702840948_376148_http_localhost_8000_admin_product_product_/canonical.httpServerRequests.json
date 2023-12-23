@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /admin/{url}",
+    "parameters": "(url)",
+    "status": 404
+  }
+]

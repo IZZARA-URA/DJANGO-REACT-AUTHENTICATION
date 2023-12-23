@@ -1,0 +1,6 @@
+[
+  {
+    "caller": "GET /favicon.ico",
+    "callee": "<templates>/UnknownSource#render"
+  }
+]

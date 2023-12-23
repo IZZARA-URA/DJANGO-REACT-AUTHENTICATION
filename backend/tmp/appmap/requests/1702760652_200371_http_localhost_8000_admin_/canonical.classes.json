@@ -1,0 +1,8 @@
+[
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminApp_ListHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminColor_Theme_ToggleHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoContribAdminTemplatesAdminIndexHtml",
+  "django/contrib/admin/options/BaseModelAdmin",
+  "django/contrib/auth/backends/ModelBackend",
+  "django/contrib/auth/models/PermissionsMixin"
+]

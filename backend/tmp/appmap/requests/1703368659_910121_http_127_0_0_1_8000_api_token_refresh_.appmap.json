@@ -1,0 +1,232 @@
+{
+  "events": [
+    {
+      "http_server_request": {
+        "request_method": "POST",
+        "protocol": "HTTP/1.1",
+        "path_info": "/api/token/refresh/",
+        "normalized_path_info": "/api/token/refresh/",
+        "mime_type": "application/json",
+        "headers": {
+          "Content-Length": "387",
+          "Content-Type": "application/json",
+          "Host": "127.0.0.1:8000",
+          "Connection": "keep-alive",
+          "Sec-Ch-Ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Microsoft Edge\";v=\"120\"",
+          "Accept": "application/json, text/plain, */*",
+          "Sec-Ch-Ua-Mobile": "?0",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0",
+          "Sec-Ch-Ua-Platform": "\"Windows\"",
+          "Origin": "http://localhost:3000",
+          "Sec-Fetch-Site": "cross-site",
+          "Sec-Fetch-Mode": "cors",
+          "Sec-Fetch-Dest": "empty",
+          "Referer": "http://localhost:3000/",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept-Language": "en-US,en;q=0.9"
+        }
+      },
+      "message": [
+        {
+          "object_id": 2467518887040,
+          "value": "'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwMzcwNDQwMywiaWF0IjoxNzAzMjcyNDAzLCJqdGkiOiI1YjcxZWJjMTZlZmU0NGVmYTIxOTA0MmVhY2NjNjljOSIsInVzZXJfaWQiOjEsImZ1bGxfbmFtZSI6IiIsInVzZXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImJpbyI6IiIsImltYWdlIjoiZGVmYXVsdC5qcGciLCJ2ZXJpZmllZCI6ZmFsc2V9.5AFd0UaTO1ds032-CTCgQKnq4q3nYZ6LY3bM1s_JKXU'",
+          "name": "refresh",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 1,
+      "event": "call",
+      "thread_id": 3
+    },
+    {
+      "sql_query": {
+        "sql": "SELECT 1 AS \"a\" FROM \"token_blacklist_blacklistedtoken\" INNER JOIN \"token_blacklist_outstandingtoken\" ON (\"token_blacklist_blacklistedtoken\".\"token_id\" = \"token_blacklist_outstandingtoken\".\"id\") WHERE \"token_blacklist_outstandingtoken\".\"jti\" = '5b71ebc16efe44efa219042eaccc69c9' LIMIT 1",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 2,
+      "event": "call",
+      "thread_id": 3
+    },
+    {
+      "parent_id": 2,
+      "elapsed": 0.015999999945051968,
+      "id": 3,
+      "event": "return",
+      "thread_id": 3
+    },
+    {
+      "sql_query": {
+        "sql": "SELECT \"token_blacklist_outstandingtoken\".\"id\", \"token_blacklist_outstandingtoken\".\"user_id\", \"token_blacklist_outstandingtoken\".\"jti\", \"token_blacklist_outstandingtoken\".\"token\", \"token_blacklist_outstandingtoken\".\"created_at\", \"token_blacklist_outstandingtoken\".\"expires_at\" FROM \"token_blacklist_outstandingtoken\" WHERE \"token_blacklist_outstandingtoken\".\"jti\" = '5b71ebc16efe44efa219042eaccc69c9' LIMIT 21",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 4,
+      "event": "call",
+      "thread_id": 3
+    },
+    {
+      "parent_id": 4,
+      "elapsed": 0,
+      "id": 5,
+      "event": "return",
+      "thread_id": 3
+    },
+    {
+      "sql_query": {
+        "sql": "SELECT \"token_blacklist_blacklistedtoken\".\"id\", \"token_blacklist_blacklistedtoken\".\"token_id\", \"token_blacklist_blacklistedtoken\".\"blacklisted_at\" FROM \"token_blacklist_blacklistedtoken\" WHERE \"token_blacklist_blacklistedtoken\".\"token_id\" = 27 LIMIT 21",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 6,
+      "event": "call",
+      "thread_id": 3
+    },
+    {
+      "parent_id": 6,
+      "elapsed": 0,
+      "id": 7,
+      "event": "return",
+      "thread_id": 3
+    },
+    {
+      "sql_query": {
+        "sql": "BEGIN",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 8,
+      "event": "call",
+      "thread_id": 3
+    },
+    {
+      "parent_id": 8,
+      "elapsed": 0,
+      "id": 9,
+      "event": "return",
+      "thread_id": 3
+    },
+    {
+      "sql_query": {
+        "sql": "INSERT INTO \"token_blacklist_blacklistedtoken\" (\"token_id\", \"blacklisted_at\") VALUES (27, '2023-12-23 21:57:39.859116') RETURNING \"token_blacklist_blacklistedtoken\".\"id\"",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 10,
+      "event": "call",
+      "thread_id": 3
+    },
+    {
+      "parent_id": 10,
+      "elapsed": 0.0470000000204891,
+      "id": 11,
+      "event": "return",
+      "thread_id": 3
+    },
+    {
+      "sql_query": {
+        "sql": "SELECT \"token_blacklist_blacklistedtoken\".\"id\", \"token_blacklist_blacklistedtoken\".\"token_id\", \"token_blacklist_blacklistedtoken\".\"blacklisted_at\" FROM \"token_blacklist_blacklistedtoken\" WHERE \"token_blacklist_blacklistedtoken\".\"token_id\" = 27 LIMIT 21",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 12,
+      "event": "call",
+      "thread_id": 3
+    },
+    {
+      "parent_id": 12,
+      "elapsed": 0,
+      "id": 13,
+      "event": "return",
+      "thread_id": 3
+    },
+    {
+      "http_server_response": {
+        "status_code": 200,
+        "mime_type": "application/json",
+        "headers": {
+          "Content-Type": "application/json",
+          "Vary": "Accept, origin",
+          "Allow": "POST, OPTIONS",
+          "X-Frame-Options": "DENY",
+          "Content-Length": "771",
+          "access-control-allow-origin": "*",
+          "X-Content-Type-Options": "nosniff",
+          "Referrer-Policy": "same-origin",
+          "Cross-Origin-Opener-Policy": "same-origin"
+        }
+      },
+      "parent_id": 1,
+      "elapsed": 0.10900000005494803,
+      "id": 14,
+      "event": "return",
+      "thread_id": 3
+    }
+  ],
+  "version": "1.9",
+  "metadata": {
+    "language": {
+      "name": "python",
+      "engine": "CPython",
+      "version": "3.11.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-python"
+    },
+    "git": {
+      "repository": "",
+      "branch": "main",
+      "commit": "a1037bb8cdf4281c1fe65da05a374c551daeafba"
+    },
+    "frameworks": [
+      {
+        "name": "Django",
+        "version": "4.2.7"
+      }
+    ],
+    "name": "POST /api/token/refresh/ (200) - 04:57:39.910",
+    "timestamp": 1703368659.910121,
+    "recorder": {
+      "name": "record_requests"
+    }
+  },
+  "classMap": [
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "POST /api/token/refresh/"
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "SELECT 1 AS \"a\" FROM \"token_blacklist_blacklistedtoken\" INNER JOIN \"token_blacklist_outstandingtoken\" ON (\"token_blacklist_blacklistedtoken\".\"token_id\" = \"token_blacklist_outstandingtoken\".\"id\") WHERE \"token_blacklist_outstandingtoken\".\"jti\" = '5b71ebc16efe44efa219042eaccc69c9' LIMIT 1"
+        },
+        {
+          "type": "query",
+          "name": "SELECT \"token_blacklist_outstandingtoken\".\"id\", \"token_blacklist_outstandingtoken\".\"user_id\", \"token_blacklist_outstandingtoken\".\"jti\", \"token_blacklist_outstandingtoken\".\"token\", \"token_blacklist_outstandingtoken\".\"created_at\", \"token_blacklist_outstandingtoken\".\"expires_at\" FROM \"token_blacklist_outstandingtoken\" WHERE \"token_blacklist_outstandingtoken\".\"jti\" = '5b71ebc16efe44efa219042eaccc69c9' LIMIT 21"
+        },
+        {
+          "type": "query",
+          "name": "SELECT \"token_blacklist_blacklistedtoken\".\"id\", \"token_blacklist_blacklistedtoken\".\"token_id\", \"token_blacklist_blacklistedtoken\".\"blacklisted_at\" FROM \"token_blacklist_blacklistedtoken\" WHERE \"token_blacklist_blacklistedtoken\".\"token_id\" = 27 LIMIT 21"
+        },
+        {
+          "type": "query",
+          "name": "BEGIN"
+        },
+        {
+          "type": "query",
+          "name": "INSERT INTO \"token_blacklist_blacklistedtoken\" (\"token_id\", \"blacklisted_at\") VALUES (27, '2023-12-23 21:57:39.859116') RETURNING \"token_blacklist_blacklistedtoken\".\"id\""
+        }
+      ]
+    }
+  ]
+}

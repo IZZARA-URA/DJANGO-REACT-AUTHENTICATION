@@ -1,0 +1,4 @@
+[
+  "django/contrib/auth/backends/ModelBackend",
+  "django/contrib/auth/models/AnonymousUser"
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "caller": "POST /admin/login/",
+    "callee": "BEGIN"
+  },
+  {
+    "caller": "POST /admin/login/",
+    "callee": "INSERT INTO \"django_session\" (\"session_key\", \"session_data\", \"expire_date\") VALUES ('93kjqmbudf7gooj6opo3ym7w3zc5zoax', 'e30:1rExDd:oUiTUG6pfWdmnpku1d9ZtOY5X81EvYkNK1ApxJAzUSE', '2023-12-31 19:54:33.317615')"
+  },
+  {
+    "caller": "POST /admin/login/",
+    "callee": "SELECT 1 AS \"a\" FROM \"django_session\" WHERE \"django_session\".\"session_key\" = '93kjqmbudf7gooj6opo3ym7w3zc5zoax' LIMIT 1"
+  },
+  {
+    "caller": "POST /admin/login/",
+    "callee": "SELECT \"api_profile\".\"id\", \"api_profile\".\"user_id\", \"api_profile\".\"full_name\", \"api_profile\".\"bio\", \"api_profile\".\"image\", \"api_profile\".\"verified\" FROM \"api_profile\" WHERE \"api_profile\".\"user_id\" = 1 LIMIT 21"
+  },
+  {
+    "caller": "POST /admin/login/",
+    "callee": "UPDATE \"api_profile\" SET \"user_id\" = 1, \"full_name\" = '', \"bio\" = '', \"image\" = 'default.jpg', \"verified\" = 0 WHERE \"api_profile\".\"id\" = 1"
+  },
+  {
+    "caller": "POST /admin/login/",
+    "callee": "UPDATE \"api_user\" SET \"last_login\" = '2023-12-17 19:54:33.326614' WHERE \"api_user\".\"id\" = 1"
+  },
+  {
+    "caller": "POST /admin/login/",
+    "callee": "UPDATE \"django_session\" SET \"session_data\" = '.eJxVjEEOwiAQRe_C2hCgnSm4dN8zkAEGqRqalHZlvLtt0oVu_3vvv4WnbS1-a7z4KYmr0OLyuwWKT64HSA-q91nGua7LFOShyJM2Oc6JX7fT_Tso1MpekwKbucusEbMGbUPoB0wuKoWcjWHqBtdbSITGoeUMoAzDDjWYaKz4fAHd2zdP:1rExDd:waKRZgkJVHTJeYGt-fnHSoSVCtBcaqUlYxqTK__algE', \"expire_date\" = '2023-12-31 19:54:33.346615' WHERE \"django_session\".\"session_key\" = '93kjqmbudf7gooj6opo3ym7w3zc5zoax'"
+  },
+  {
+    "caller": "POST /admin/login/",
+    "callee": "django/contrib"
+  },
+  {
+    "caller": "django/contrib",
+    "callee": "SELECT \"api_user\".\"id\", \"api_user\".\"password\", \"api_user\".\"last_login\", \"api_user\".\"is_superuser\", \"api_user\".\"first_name\", \"api_user\".\"last_name\", \"api_user\".\"is_staff\", \"api_user\".\"is_active\", \"api_user\".\"date_joined\", \"api_user\".\"username\", \"api_user\".\"email\" FROM \"api_user\" WHERE \"api_user\".\"email\" = 'admin@gmail.com' LIMIT 21"
+  }
+]

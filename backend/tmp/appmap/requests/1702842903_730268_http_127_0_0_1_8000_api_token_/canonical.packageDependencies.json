@@ -1,0 +1,10 @@
+[
+  {
+    "caller": "HTTP server requests",
+    "callee": "django"
+  },
+  {
+    "caller": "django",
+    "callee": "Database"
+  }
+]

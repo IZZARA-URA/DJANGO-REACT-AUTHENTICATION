@@ -1,0 +1,7 @@
+[
+  {
+    "route": "POST /api/token/",
+    "parameters": "(email,password)",
+    "status": 401
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /api/schema/docs/",
+    "parameters": "()",
+    "status": 404
+  }
+]

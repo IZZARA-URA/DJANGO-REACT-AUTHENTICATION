@@ -1,0 +1,18 @@
+[
+  {
+    "caller": "POST /api/token/",
+    "callee": "INSERT INTO \"token_blacklist_outstandingtoken\" (\"user_id\", \"jti\", \"token\", \"created_at\", \"expires_at\") VALUES (1, '5b71ebc16efe44efa219042eaccc69c9', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwMzcwNDQwMywiaWF0IjoxNzAzMjcyNDAzLCJqdGkiOiI1YjcxZWJjMTZlZmU0NGVmYTIxOTA0MmVhY2NjNjljOSIsInVzZXJfaWQiOjF9.92pN0VqDOpzDM28mUmJL6lOt3wbPrzymEL-JCYKFNho', '2023-12-22 19:13:23.091497', '2023-12-27 19:13:23') RETURNING \"token_blacklist_outstandingtoken\".\"id\""
+  },
+  {
+    "caller": "POST /api/token/",
+    "callee": "SELECT \"api_profile\".\"id\", \"api_profile\".\"user_id\", \"api_profile\".\"full_name\", \"api_profile\".\"bio\", \"api_profile\".\"image\", \"api_profile\".\"verified\" FROM \"api_profile\" WHERE \"api_profile\".\"user_id\" = 1 LIMIT 21"
+  },
+  {
+    "caller": "POST /api/token/",
+    "callee": "django/contrib"
+  },
+  {
+    "caller": "django/contrib",
+    "callee": "SELECT \"api_user\".\"id\", \"api_user\".\"password\", \"api_user\".\"last_login\", \"api_user\".\"is_superuser\", \"api_user\".\"first_name\", \"api_user\".\"last_name\", \"api_user\".\"is_staff\", \"api_user\".\"is_active\", \"api_user\".\"date_joined\", \"api_user\".\"username\", \"api_user\".\"email\" FROM \"api_user\" WHERE \"api_user\".\"email\" = 'admin@gmail.com' LIMIT 21"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsCheckboxHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsHiddenHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsInputHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelectHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelect_OptionHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesJazzminTemplatesAdminActionsHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesJazzminTemplatesAdminChange_ListHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesJazzminTemplatesAdminChange_List_Object_ToolsHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesJazzminTemplatesAdminChange_List_ResultsHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesJazzminTemplatesAdminPaginationHtml",
+  "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesJazzminTemplatesAdminSearch_FormHtml",
+  "django/contrib/admin/options/BaseModelAdmin",
+  "django/contrib/auth/backends/ModelBackend",
+  "django/contrib/auth/models/PermissionsMixin"
+]

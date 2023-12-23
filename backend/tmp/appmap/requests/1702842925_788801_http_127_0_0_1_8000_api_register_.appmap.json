@@ -1,0 +1,149 @@
+{
+  "events": [
+    {
+      "http_server_request": {
+        "request_method": "POST",
+        "protocol": "HTTP/1.1",
+        "path_info": "/api/register/",
+        "normalized_path_info": "/api/register/",
+        "mime_type": "application/json",
+        "headers": {
+          "Content-Length": "87",
+          "Content-Type": "application/json",
+          "Host": "127.0.0.1:8000",
+          "Connection": "keep-alive",
+          "Sec-Ch-Ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Microsoft Edge\";v=\"120\"",
+          "Sec-Ch-Ua-Platform": "\"Windows\"",
+          "Sec-Ch-Ua-Mobile": "?0",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0",
+          "Accept": "*/*",
+          "Origin": "http://localhost:3000",
+          "Sec-Fetch-Site": "cross-site",
+          "Sec-Fetch-Mode": "cors",
+          "Sec-Fetch-Dest": "empty",
+          "Referer": "http://localhost:3000/",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept-Language": "en-US,en;q=0.9"
+        }
+      },
+      "message": [
+        {
+          "object_id": 2727022098624,
+          "value": "'test00@gmail.com'",
+          "name": "email",
+          "class": "builtins.str"
+        },
+        {
+          "object_id": 2727011576176,
+          "value": "'test00'",
+          "name": "username",
+          "class": "builtins.str"
+        },
+        {
+          "object_id": 2727016083504,
+          "value": "'admin'",
+          "name": "password",
+          "class": "builtins.str"
+        },
+        {
+          "object_id": 2727016081456,
+          "value": "'admin'",
+          "name": "password2",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 1,
+      "event": "call",
+      "thread_id": 13
+    },
+    {
+      "sql_query": {
+        "sql": "SELECT 1 AS \"a\" FROM \"api_user\" WHERE \"api_user\".\"email\" = 'test00@gmail.com' LIMIT 1",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 2,
+      "event": "call",
+      "thread_id": 13
+    },
+    {
+      "parent_id": 2,
+      "elapsed": 0,
+      "id": 3,
+      "event": "return",
+      "thread_id": 13
+    },
+    {
+      "http_server_response": {
+        "status_code": 400,
+        "mime_type": "application/json",
+        "headers": {
+          "Content-Type": "application/json",
+          "Vary": "Accept, Cookie, origin",
+          "Allow": "POST, OPTIONS",
+          "X-Frame-Options": "DENY",
+          "Content-Length": "114",
+          "access-control-allow-origin": "*",
+          "X-Content-Type-Options": "nosniff",
+          "Referrer-Policy": "same-origin",
+          "Cross-Origin-Opener-Policy": "same-origin"
+        }
+      },
+      "parent_id": 1,
+      "elapsed": 0,
+      "id": 4,
+      "event": "return",
+      "thread_id": 13
+    }
+  ],
+  "version": "1.9",
+  "metadata": {
+    "language": {
+      "name": "python",
+      "engine": "CPython",
+      "version": "3.11.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-python"
+    },
+    "git": {
+      "repository": "",
+      "branch": "main",
+      "commit": "a1037bb8cdf4281c1fe65da05a374c551daeafba"
+    },
+    "frameworks": [
+      {
+        "name": "Django",
+        "version": "4.2.7"
+      }
+    ],
+    "name": "POST /api/register/ (400) - 02:55:25.788",
+    "timestamp": 1702842925.788801,
+    "recorder": {
+      "name": "record_requests"
+    }
+  },
+  "classMap": [
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "POST /api/register/"
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "SELECT 1 AS \"a\" FROM \"api_user\" WHERE \"api_user\".\"email\" = 'test00@gmail.com' LIMIT 1"
+        }
+      ]
+    }
+  ]
+}

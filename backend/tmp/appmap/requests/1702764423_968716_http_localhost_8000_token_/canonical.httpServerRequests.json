@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /token/",
+    "parameters": "()",
+    "status": 404
+  }
+]

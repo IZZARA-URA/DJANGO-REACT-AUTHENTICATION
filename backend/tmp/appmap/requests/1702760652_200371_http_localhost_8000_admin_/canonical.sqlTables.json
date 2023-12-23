@@ -1,0 +1,6 @@
+[
+  "api_user",
+  "django_admin_log",
+  "django_content_type",
+  "django_session"
+]

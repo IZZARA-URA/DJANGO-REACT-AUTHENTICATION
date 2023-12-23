@@ -1,0 +1,6 @@
+[
+  {
+    "caller": "POST /api/register/",
+    "callee": "SELECT 1 AS \"a\" FROM \"api_user\" WHERE \"api_user\".\"email\" = 'test00@gmail.com' LIMIT 1"
+  }
+]

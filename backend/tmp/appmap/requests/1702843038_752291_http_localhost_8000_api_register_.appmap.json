@@ -1,0 +1,994 @@
+{
+  "events": [
+    {
+      "http_server_request": {
+        "request_method": "POST",
+        "protocol": "HTTP/1.1",
+        "path_info": "/api/register/",
+        "normalized_path_info": "/api/register/",
+        "mime_type": "multipart/form-data; boundary=----WebKitFormBoundaryqApRGwMrssaIqnvz",
+        "headers": {
+          "Content-Length": "630",
+          "Content-Type": "multipart/form-data; boundary=----WebKitFormBoundaryqApRGwMrssaIqnvz",
+          "Host": "localhost:8000",
+          "Connection": "keep-alive",
+          "Cache-Control": "max-age=0",
+          "Sec-Ch-Ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Microsoft Edge\";v=\"120\"",
+          "Sec-Ch-Ua-Mobile": "?0",
+          "Sec-Ch-Ua-Platform": "\"Windows\"",
+          "Upgrade-Insecure-Requests": "1",
+          "Origin": "http://localhost:8000",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0",
+          "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+          "Sec-Fetch-Site": "same-origin",
+          "Sec-Fetch-Mode": "navigate",
+          "Sec-Fetch-User": "?1",
+          "Sec-Fetch-Dest": "document",
+          "Referer": "http://localhost:8000/api/register/",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept-Language": "en-US,en;q=0.9",
+          "Cookie": "csrftoken=ZYme0Zze3noXfaBvMiMAIf6fXYIWxOxq; sessionid=93kjqmbudf7gooj6opo3ym7w3zc5zoax"
+        }
+      },
+      "message": [
+        {
+          "object_id": 2727013628848,
+          "value": "'dRrU7TYPKEVYQdgweSDSfxy9GCwxUIwV2FDYXInTDR9LVdHRQ0fiNCuetq4jhmTb'",
+          "name": "csrfmiddlewaretoken",
+          "class": "builtins.str"
+        },
+        {
+          "object_id": 2727022358128,
+          "value": "'test01@gmial.com'",
+          "name": "email",
+          "class": "builtins.str"
+        },
+        {
+          "object_id": 2727009879408,
+          "value": "'test01'",
+          "name": "username",
+          "class": "builtins.str"
+        },
+        {
+          "object_id": 2727015087728,
+          "value": "'ru8a@8U8'",
+          "name": "password",
+          "class": "builtins.str"
+        },
+        {
+          "object_id": 2727009732912,
+          "value": "'ru8a@8U8'",
+          "name": "password2",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 1,
+      "event": "call",
+      "thread_id": 16
+    },
+    {
+      "sql_query": {
+        "sql": "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > '2023-12-17 19:57:17.907297' AND \"django_session\".\"session_key\" = '93kjqmbudf7gooj6opo3ym7w3zc5zoax') LIMIT 21",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 2,
+      "event": "call",
+      "thread_id": 16
+    },
+    {
+      "parent_id": 2,
+      "elapsed": 0,
+      "id": 3,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "sql_query": {
+        "sql": "SELECT \"api_user\".\"id\", \"api_user\".\"password\", \"api_user\".\"last_login\", \"api_user\".\"is_superuser\", \"api_user\".\"first_name\", \"api_user\".\"last_name\", \"api_user\".\"is_staff\", \"api_user\".\"is_active\", \"api_user\".\"date_joined\", \"api_user\".\"username\", \"api_user\".\"email\" FROM \"api_user\" WHERE \"api_user\".\"id\" = 1 LIMIT 21",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 4,
+      "event": "call",
+      "thread_id": 16
+    },
+    {
+      "parent_id": 4,
+      "elapsed": 0,
+      "id": 5,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 2727014058256,
+        "value": "<django.contrib.auth.backends.ModelBackend object at 0x0000027AEEB44910>",
+        "name": "self",
+        "class": "django.contrib.auth.backends.ModelBackend"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 2727014065168,
+          "value": "<User: admin>",
+          "name": "user",
+          "class": "api.models.User"
+        }
+      ],
+      "id": 6,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "django.contrib.auth.backends.ModelBackend",
+      "method_id": "user_can_authenticate",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\backends.py",
+      "lineno": 55
+    },
+    {
+      "return_value": {
+        "object_id": 140724260285288,
+        "value": "True",
+        "class": "builtins.bool"
+      },
+      "parent_id": 6,
+      "elapsed": 0,
+      "id": 7,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "sql_query": {
+        "sql": "SELECT 1 AS \"a\" FROM \"api_user\" WHERE \"api_user\".\"email\" = 'test01@gmial.com' LIMIT 1",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 8,
+      "event": "call",
+      "thread_id": 16
+    },
+    {
+      "parent_id": 8,
+      "elapsed": 0,
+      "id": 9,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "sql_query": {
+        "sql": "INSERT INTO \"api_user\" (\"password\", \"last_login\", \"is_superuser\", \"first_name\", \"last_name\", \"is_staff\", \"is_active\", \"date_joined\", \"username\", \"email\") VALUES ('', NULL, 0, '', '', 0, 1, '2023-12-17 19:57:17.917296', 'test01', 'test01@gmial.com') RETURNING \"api_user\".\"id\"",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 10,
+      "event": "call",
+      "thread_id": 16
+    },
+    {
+      "parent_id": 10,
+      "elapsed": 0,
+      "id": 11,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "sql_query": {
+        "sql": "INSERT INTO \"api_profile\" (\"user_id\", \"full_name\", \"bio\", \"image\", \"verified\") VALUES (2, '', '', 'default.jpg', 0) RETURNING \"api_profile\".\"id\"",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 12,
+      "event": "call",
+      "thread_id": 16
+    },
+    {
+      "parent_id": 12,
+      "elapsed": 0,
+      "id": 13,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "sql_query": {
+        "sql": "UPDATE \"api_profile\" SET \"user_id\" = 2, \"full_name\" = '', \"bio\" = '', \"image\" = 'default.jpg', \"verified\" = 0 WHERE \"api_profile\".\"id\" = 2",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 14,
+      "event": "call",
+      "thread_id": 16
+    },
+    {
+      "parent_id": 14,
+      "elapsed": 0.01600000000325963,
+      "id": 15,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "sql_query": {
+        "sql": "UPDATE \"api_user\" SET \"password\" = 'pbkdf2_sha256$600000$reDsCok7jlCk3MKguvDx9z$eEgLmnd6SqfQBFBRXhyopmDSQSHS0/J1KS0yqBdQfms=', \"last_login\" = NULL, \"is_superuser\" = 0, \"first_name\" = '', \"last_name\" = '', \"is_staff\" = 0, \"is_active\" = 1, \"date_joined\" = '2023-12-17 19:57:17.917296', \"username\" = 'test01', \"email\" = 'test01@gmial.com' WHERE \"api_user\".\"id\" = 2",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 16,
+      "event": "call",
+      "thread_id": 16
+    },
+    {
+      "parent_id": 16,
+      "elapsed": 0.031000000002677552,
+      "id": 17,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "sql_query": {
+        "sql": "UPDATE \"api_profile\" SET \"user_id\" = 2, \"full_name\" = '', \"bio\" = '', \"image\" = 'default.jpg', \"verified\" = 0 WHERE \"api_profile\".\"id\" = 2",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 18,
+      "event": "call",
+      "thread_id": 16
+    },
+    {
+      "parent_id": 18,
+      "elapsed": 0.014999999999417923,
+      "id": 19,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "receiver": {
+        "object_id": 2727012508880,
+        "value": "<Template template_string=\"{% load rest_framewo...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\rest_framework\\templates\\rest_framework\\horizontal\\form.html",
+      "id": 20,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkHorizontalFormHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 2727014698000,
+        "value": "<Template template_string=\"<div class=\"form-gro...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\rest_framework\\templates\\rest_framework\\horizontal\\input.html",
+      "id": 21,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkHorizontalInputHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 21,
+      "elapsed": 0,
+      "id": 22,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "receiver": {
+        "object_id": 2727014698000,
+        "value": "<Template template_string=\"<div class=\"form-gro...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\rest_framework\\templates\\rest_framework\\horizontal\\input.html",
+      "id": 23,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkHorizontalInputHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 23,
+      "elapsed": 0,
+      "id": 24,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "receiver": {
+        "object_id": 2727014698000,
+        "value": "<Template template_string=\"<div class=\"form-gro...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\rest_framework\\templates\\rest_framework\\horizontal\\input.html",
+      "id": 25,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkHorizontalInputHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 25,
+      "elapsed": 0,
+      "id": 26,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "receiver": {
+        "object_id": 2727014698000,
+        "value": "<Template template_string=\"<div class=\"form-gro...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\rest_framework\\templates\\rest_framework\\horizontal\\input.html",
+      "id": 27,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkHorizontalInputHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 27,
+      "elapsed": 0,
+      "id": 28,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "parent_id": 20,
+      "elapsed": 0,
+      "id": 29,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "receiver": {
+        "object_id": 2727011890832,
+        "value": "<Template template_string=\"{% extends \"rest_fra...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\rest_framework\\templates\\rest_framework\\api.html",
+      "id": 30,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkApiHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 2727014479760,
+        "value": "<Template template_string=\"{% load rest_framewo...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\rest_framework\\templates\\rest_framework\\raw_data_form.html",
+      "id": 31,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkRaw_Data_FormHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 2727012761360,
+        "value": "<Template template_string=\"{% include \"django/f...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\errors\\list\\default.html",
+      "id": 32,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsErrorsListDefaultHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 2727009709776,
+        "value": "<Template template_string=\"{% if errors %}<ul c...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\errors\\list\\ul.html",
+      "id": 33,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsErrorsListUlHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 33,
+      "elapsed": 0,
+      "id": 34,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "parent_id": 32,
+      "elapsed": 0,
+      "id": 35,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "receiver": {
+        "object_id": 2727005083280,
+        "value": "<Template template_string=\"{% if use_tag %}<{{ ...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\label.html",
+      "id": 36,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsLabelHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 2727014519248,
+        "value": "<Template template_string=\"{% for name, value i...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\attrs.html",
+      "id": 37,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsAttrsHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 37,
+      "elapsed": 0,
+      "id": 38,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "parent_id": 36,
+      "elapsed": 0,
+      "id": 39,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "receiver": {
+        "object_id": 2727014523408,
+        "value": "<Template template_string=\"<select name=\"{{ wid...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\widgets\\select.html",
+      "id": 40,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelectHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 2727013001808,
+        "value": "<Template template_string=\"{% for name, value i...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\widgets\\attrs.html",
+      "id": 41,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 41,
+      "elapsed": 0,
+      "id": 42,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "receiver": {
+        "object_id": 2727012991760,
+        "value": "<Template template_string=\"<option value=\"{{ wi...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\widgets\\select_option.html",
+      "id": 43,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelect_OptionHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 2727013001808,
+        "value": "<Template template_string=\"{% for name, value i...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\widgets\\attrs.html",
+      "id": 44,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 44,
+      "elapsed": 0,
+      "id": 45,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "parent_id": 43,
+      "elapsed": 0,
+      "id": 46,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "receiver": {
+        "object_id": 2727012991760,
+        "value": "<Template template_string=\"<option value=\"{{ wi...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\widgets\\select_option.html",
+      "id": 47,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelect_OptionHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 2727013001808,
+        "value": "<Template template_string=\"{% for name, value i...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\widgets\\attrs.html",
+      "id": 48,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 48,
+      "elapsed": 0,
+      "id": 49,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "parent_id": 47,
+      "elapsed": 0,
+      "id": 50,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "receiver": {
+        "object_id": 2727012991760,
+        "value": "<Template template_string=\"<option value=\"{{ wi...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\widgets\\select_option.html",
+      "id": 51,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelect_OptionHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 2727013001808,
+        "value": "<Template template_string=\"{% for name, value i...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\widgets\\attrs.html",
+      "id": 52,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 52,
+      "elapsed": 0,
+      "id": 53,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "parent_id": 51,
+      "elapsed": 0,
+      "id": 54,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "parent_id": 40,
+      "elapsed": 0.01600000000325963,
+      "id": 55,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "receiver": {
+        "object_id": 2727005083280,
+        "value": "<Template template_string=\"{% if use_tag %}<{{ ...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\label.html",
+      "id": 56,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsLabelHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 2727014519248,
+        "value": "<Template template_string=\"{% for name, value i...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\attrs.html",
+      "id": 57,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsAttrsHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 57,
+      "elapsed": 0,
+      "id": 58,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "parent_id": 56,
+      "elapsed": 0,
+      "id": 59,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "receiver": {
+        "object_id": 2727014562512,
+        "value": "<Template template_string=\"<textarea name=\"{{ w...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\widgets\\textarea.html",
+      "id": 60,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsTextareaHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "receiver": {
+        "object_id": 2727013001808,
+        "value": "<Template template_string=\"{% for name, value i...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\forms\\templates\\django\\forms\\widgets\\attrs.html",
+      "id": 61,
+      "event": "call",
+      "thread_id": 16,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 61,
+      "elapsed": 0,
+      "id": 62,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "parent_id": 60,
+      "elapsed": 0,
+      "id": 63,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "parent_id": 31,
+      "elapsed": 0.01600000000325963,
+      "id": 64,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "parent_id": 30,
+      "elapsed": 0.01600000000325963,
+      "id": 65,
+      "event": "return",
+      "thread_id": 16
+    },
+    {
+      "http_server_response": {
+        "status_code": 201,
+        "mime_type": "text/html; charset=utf-8",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8",
+          "Vary": "Accept, Cookie, origin",
+          "Allow": "POST, OPTIONS",
+          "X-Frame-Options": "DENY",
+          "Content-Length": "13136",
+          "access-control-allow-origin": "*",
+          "X-Content-Type-Options": "nosniff",
+          "Referrer-Policy": "same-origin",
+          "Cross-Origin-Opener-Policy": "same-origin"
+        }
+      },
+      "parent_id": 1,
+      "elapsed": 0.8440000000118744,
+      "id": 66,
+      "event": "return",
+      "thread_id": 16
+    }
+  ],
+  "version": "1.9",
+  "metadata": {
+    "language": {
+      "name": "python",
+      "engine": "CPython",
+      "version": "3.11.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-python"
+    },
+    "git": {
+      "repository": "",
+      "branch": "main",
+      "commit": "a1037bb8cdf4281c1fe65da05a374c551daeafba"
+    },
+    "frameworks": [
+      {
+        "name": "Django",
+        "version": "4.2.7"
+      }
+    ],
+    "name": "POST /api/register/ (201) - 02:57:18.752",
+    "timestamp": 1702843038.752291,
+    "recorder": {
+      "name": "record_requests"
+    }
+  },
+  "classMap": [
+    {
+      "name": "django",
+      "type": "package",
+      "children": [
+        {
+          "name": "contrib",
+          "type": "package",
+          "children": [
+            {
+              "name": "auth",
+              "type": "package",
+              "children": [
+                {
+                  "name": "backends",
+                  "type": "package",
+                  "children": [
+                    {
+                      "name": "ModelBackend",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "user_can_authenticate",
+                          "type": "function",
+                          "labels": [
+                            "security.authorization"
+                          ],
+                          "static": false,
+                          "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\backends.py:55"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "POST /api/register/"
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > '2023-12-17 19:57:17.907297' AND \"django_session\".\"session_key\" = '93kjqmbudf7gooj6opo3ym7w3zc5zoax') LIMIT 21"
+        },
+        {
+          "type": "query",
+          "name": "SELECT \"api_user\".\"id\", \"api_user\".\"password\", \"api_user\".\"last_login\", \"api_user\".\"is_superuser\", \"api_user\".\"first_name\", \"api_user\".\"last_name\", \"api_user\".\"is_staff\", \"api_user\".\"is_active\", \"api_user\".\"date_joined\", \"api_user\".\"username\", \"api_user\".\"email\" FROM \"api_user\" WHERE \"api_user\".\"id\" = 1 LIMIT 21"
+        },
+        {
+          "type": "query",
+          "name": "SELECT 1 AS \"a\" FROM \"api_user\" WHERE \"api_user\".\"email\" = 'test01@gmial.com' LIMIT 1"
+        },
+        {
+          "type": "query",
+          "name": "INSERT INTO \"api_user\" (\"password\", \"last_login\", \"is_superuser\", \"first_name\", \"last_name\", \"is_staff\", \"is_active\", \"date_joined\", \"username\", \"email\") VALUES ('', NULL, 0, '', '', 0, 1, '2023-12-17 19:57:17.917296', 'test01', 'test01@gmial.com') RETURNING \"api_user\".\"id\""
+        },
+        {
+          "type": "query",
+          "name": "INSERT INTO \"api_profile\" (\"user_id\", \"full_name\", \"bio\", \"image\", \"verified\") VALUES (2, '', '', 'default.jpg', 0) RETURNING \"api_profile\".\"id\""
+        },
+        {
+          "type": "query",
+          "name": "UPDATE \"api_profile\" SET \"user_id\" = 2, \"full_name\" = '', \"bio\" = '', \"image\" = 'default.jpg', \"verified\" = 0 WHERE \"api_profile\".\"id\" = 2"
+        },
+        {
+          "type": "query",
+          "name": "UPDATE \"api_user\" SET \"password\" = 'pbkdf2_sha256$600000$reDsCok7jlCk3MKguvDx9z$eEgLmnd6SqfQBFBRXhyopmDSQSHS0/J1KS0yqBdQfms=', \"last_login\" = NULL, \"is_superuser\" = 0, \"first_name\" = '', \"last_name\" = '', \"is_staff\" = 0, \"is_active\" = 1, \"date_joined\" = '2023-12-17 19:57:17.917296', \"username\" = 'test01', \"email\" = 'test01@gmial.com' WHERE \"api_user\".\"id\" = 2"
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkHorizontalFormHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkHorizontalInputHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkApiHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesRest_FrameworkTemplatesRest_FrameworkRaw_Data_FormHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsErrorsListDefaultHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsErrorsListUlHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsLabelHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsAttrsHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelectHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsAttrsHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsSelect_OptionHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesDjangoFormsTemplatesDjangoFormsWidgetsTextareaHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    }
+  ]
+}

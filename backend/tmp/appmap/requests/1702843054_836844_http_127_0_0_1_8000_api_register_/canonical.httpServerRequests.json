@@ -1,0 +1,7 @@
+[
+  {
+    "route": "POST /api/register/",
+    "parameters": "(email,username,password,password2)",
+    "status": 201
+  }
+]

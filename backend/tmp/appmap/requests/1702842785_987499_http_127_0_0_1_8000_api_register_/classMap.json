@@ -1,0 +1,22 @@
+[
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "POST /api/register/"
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT 1 AS \"a\" FROM \"api_user\" WHERE \"api_user\".\"email\" = 'test00@gmail.com' LIMIT 1"
+      }
+    ]
+  }
+]

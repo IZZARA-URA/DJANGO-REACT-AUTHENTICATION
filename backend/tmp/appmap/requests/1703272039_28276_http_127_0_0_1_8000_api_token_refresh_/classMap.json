@@ -1,0 +1,42 @@
+[
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "POST /api/token/refresh/"
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT 1 AS \"a\" FROM \"token_blacklist_blacklistedtoken\" INNER JOIN \"token_blacklist_outstandingtoken\" ON (\"token_blacklist_blacklistedtoken\".\"token_id\" = \"token_blacklist_outstandingtoken\".\"id\") WHERE \"token_blacklist_outstandingtoken\".\"jti\" = 'b516cde209164a75ad5fd8952ce87891' LIMIT 1"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"token_blacklist_outstandingtoken\".\"id\", \"token_blacklist_outstandingtoken\".\"user_id\", \"token_blacklist_outstandingtoken\".\"jti\", \"token_blacklist_outstandingtoken\".\"token\", \"token_blacklist_outstandingtoken\".\"created_at\", \"token_blacklist_outstandingtoken\".\"expires_at\" FROM \"token_blacklist_outstandingtoken\" WHERE \"token_blacklist_outstandingtoken\".\"jti\" = 'b516cde209164a75ad5fd8952ce87891' LIMIT 21"
+      },
+      {
+        "type": "query",
+        "name": "BEGIN"
+      },
+      {
+        "type": "query",
+        "name": "INSERT INTO \"token_blacklist_outstandingtoken\" (\"user_id\", \"jti\", \"token\", \"created_at\", \"expires_at\") VALUES (NULL, 'b516cde209164a75ad5fd8952ce87891', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwMzcwMzcyMCwiaWF0IjoxNzAzMjcxNzIwLCJqdGkiOiJiNTE2Y2RlMjA5MTY0YTc1YWQ1ZmQ4OTUyY2U4Nzg5MSIsInVzZXJfaWQiOjEsImZ1bGxfbmFtZSI6IiIsInVzZXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImJpbyI6IiIsImltYWdlIjoiZGVmYXVsdC5qcGciLCJ2ZXJpZmllZCI6ZmFsc2V9.kWU3j2cB02Trc_BvI251Dksz0GqPsLDC9i5AURSsTmQ', NULL, '2023-12-27 19:02:00') RETURNING \"token_blacklist_outstandingtoken\".\"id\""
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"token_blacklist_blacklistedtoken\".\"id\", \"token_blacklist_blacklistedtoken\".\"token_id\", \"token_blacklist_blacklistedtoken\".\"blacklisted_at\" FROM \"token_blacklist_blacklistedtoken\" WHERE \"token_blacklist_blacklistedtoken\".\"token_id\" = 25 LIMIT 21"
+      },
+      {
+        "type": "query",
+        "name": "INSERT INTO \"token_blacklist_blacklistedtoken\" (\"token_id\", \"blacklisted_at\") VALUES (25, '2023-12-22 19:07:19.256754') RETURNING \"token_blacklist_blacklistedtoken\".\"id\""
+      }
+    ]
+  }
+]

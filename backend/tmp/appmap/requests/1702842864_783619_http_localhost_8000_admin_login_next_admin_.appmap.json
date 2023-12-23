@@ -1,0 +1,611 @@
+{
+  "events": [
+    {
+      "http_server_request": {
+        "request_method": "GET",
+        "protocol": "HTTP/1.1",
+        "path_info": "/admin/login/",
+        "normalized_path_info": "/admin/login/",
+        "mime_type": "text/plain",
+        "headers": {
+          "Content-Length": "",
+          "Content-Type": "text/plain",
+          "Host": "localhost:8000",
+          "Connection": "keep-alive",
+          "Upgrade-Insecure-Requests": "1",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0",
+          "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+          "Sec-Fetch-Site": "none",
+          "Sec-Fetch-Mode": "navigate",
+          "Sec-Fetch-User": "?1",
+          "Sec-Fetch-Dest": "document",
+          "Sec-Ch-Ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Microsoft Edge\";v=\"120\"",
+          "Sec-Ch-Ua-Mobile": "?0",
+          "Sec-Ch-Ua-Platform": "\"Windows\"",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept-Language": "en-US,en;q=0.9"
+        }
+      },
+      "message": [
+        {
+          "object_id": 2727009368048,
+          "value": "'/admin/'",
+          "name": "next",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 1,
+      "event": "call",
+      "thread_id": 8
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 2727010587792,
+        "value": "<django.contrib.auth.models.AnonymousUser object at 0x0000027AEE7F5490>",
+        "name": "self",
+        "class": "django.contrib.auth.models.AnonymousUser"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 2726975960688,
+          "value": "'auth'",
+          "name": "module",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 2,
+      "event": "call",
+      "thread_id": 8,
+      "defined_class": "django.contrib.auth.models.AnonymousUser",
+      "method_id": "has_module_perms",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 487
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 2727010595984,
+        "value": "<django.contrib.auth.backends.ModelBackend object at 0x0000027AEE7F7490>",
+        "name": "self",
+        "class": "django.contrib.auth.backends.ModelBackend"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 2727010587792,
+          "value": "<django.contrib.auth.models.AnonymousUser object at 0x0000027AEE7F5490>",
+          "name": "user_obj",
+          "class": "django.contrib.auth.models.AnonymousUser"
+        },
+        {
+          "kind": "req",
+          "object_id": 2726975960688,
+          "value": "'auth'",
+          "name": "app_label",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 3,
+      "event": "call",
+      "thread_id": 8,
+      "defined_class": "django.contrib.auth.backends.ModelBackend",
+      "method_id": "has_module_perms",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\backends.py",
+      "lineno": 115
+    },
+    {
+      "return_value": {
+        "object_id": 140724260285320,
+        "value": "False",
+        "class": "builtins.bool"
+      },
+      "parent_id": 3,
+      "elapsed": 0,
+      "id": 4,
+      "event": "return",
+      "thread_id": 8
+    },
+    {
+      "return_value": {
+        "object_id": 140724260285320,
+        "value": "False",
+        "class": "builtins.bool"
+      },
+      "parent_id": 2,
+      "elapsed": 0,
+      "id": 5,
+      "event": "return",
+      "thread_id": 8
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 2727010587792,
+        "value": "<django.contrib.auth.models.AnonymousUser object at 0x0000027AEE7F5490>",
+        "name": "self",
+        "class": "django.contrib.auth.models.AnonymousUser"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 2726971702768,
+          "value": "'api'",
+          "name": "module",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 6,
+      "event": "call",
+      "thread_id": 8,
+      "defined_class": "django.contrib.auth.models.AnonymousUser",
+      "method_id": "has_module_perms",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 487
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 2727011189520,
+        "value": "<django.contrib.auth.backends.ModelBackend object at 0x0000027AEE888310>",
+        "name": "self",
+        "class": "django.contrib.auth.backends.ModelBackend"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 2727010587792,
+          "value": "<django.contrib.auth.models.AnonymousUser object at 0x0000027AEE7F5490>",
+          "name": "user_obj",
+          "class": "django.contrib.auth.models.AnonymousUser"
+        },
+        {
+          "kind": "req",
+          "object_id": 2726971702768,
+          "value": "'api'",
+          "name": "app_label",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 7,
+      "event": "call",
+      "thread_id": 8,
+      "defined_class": "django.contrib.auth.backends.ModelBackend",
+      "method_id": "has_module_perms",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\backends.py",
+      "lineno": 115
+    },
+    {
+      "return_value": {
+        "object_id": 140724260285320,
+        "value": "False",
+        "class": "builtins.bool"
+      },
+      "parent_id": 7,
+      "elapsed": 0,
+      "id": 8,
+      "event": "return",
+      "thread_id": 8
+    },
+    {
+      "return_value": {
+        "object_id": 140724260285320,
+        "value": "False",
+        "class": "builtins.bool"
+      },
+      "parent_id": 6,
+      "elapsed": 0.0010025501251220703,
+      "id": 9,
+      "event": "return",
+      "thread_id": 8
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 2727010587792,
+        "value": "<django.contrib.auth.models.AnonymousUser object at 0x0000027AEE7F5490>",
+        "name": "self",
+        "class": "django.contrib.auth.models.AnonymousUser"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 2726971702768,
+          "value": "'api'",
+          "name": "module",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 10,
+      "event": "call",
+      "thread_id": 8,
+      "defined_class": "django.contrib.auth.models.AnonymousUser",
+      "method_id": "has_module_perms",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 487
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 2727011189648,
+        "value": "<django.contrib.auth.backends.ModelBackend object at 0x0000027AEE888390>",
+        "name": "self",
+        "class": "django.contrib.auth.backends.ModelBackend"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 2727010587792,
+          "value": "<django.contrib.auth.models.AnonymousUser object at 0x0000027AEE7F5490>",
+          "name": "user_obj",
+          "class": "django.contrib.auth.models.AnonymousUser"
+        },
+        {
+          "kind": "req",
+          "object_id": 2726971702768,
+          "value": "'api'",
+          "name": "app_label",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 11,
+      "event": "call",
+      "thread_id": 8,
+      "defined_class": "django.contrib.auth.backends.ModelBackend",
+      "method_id": "has_module_perms",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\backends.py",
+      "lineno": 115
+    },
+    {
+      "return_value": {
+        "object_id": 140724260285320,
+        "value": "False",
+        "class": "builtins.bool"
+      },
+      "parent_id": 11,
+      "elapsed": 0,
+      "id": 12,
+      "event": "return",
+      "thread_id": 8
+    },
+    {
+      "return_value": {
+        "object_id": 140724260285320,
+        "value": "False",
+        "class": "builtins.bool"
+      },
+      "parent_id": 10,
+      "elapsed": 0,
+      "id": 13,
+      "event": "return",
+      "thread_id": 8
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 2727010587792,
+        "value": "<django.contrib.auth.models.AnonymousUser object at 0x0000027AEE7F5490>",
+        "name": "self",
+        "class": "django.contrib.auth.models.AnonymousUser"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 2726976537200,
+          "value": "'token_blacklist'",
+          "name": "module",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 14,
+      "event": "call",
+      "thread_id": 8,
+      "defined_class": "django.contrib.auth.models.AnonymousUser",
+      "method_id": "has_module_perms",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 487
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 2727011200912,
+        "value": "<django.contrib.auth.backends.ModelBackend object at 0x0000027AEE88AF90>",
+        "name": "self",
+        "class": "django.contrib.auth.backends.ModelBackend"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 2727010587792,
+          "value": "<django.contrib.auth.models.AnonymousUser object at 0x0000027AEE7F5490>",
+          "name": "user_obj",
+          "class": "django.contrib.auth.models.AnonymousUser"
+        },
+        {
+          "kind": "req",
+          "object_id": 2726976537200,
+          "value": "'token_blacklist'",
+          "name": "app_label",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 15,
+      "event": "call",
+      "thread_id": 8,
+      "defined_class": "django.contrib.auth.backends.ModelBackend",
+      "method_id": "has_module_perms",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\backends.py",
+      "lineno": 115
+    },
+    {
+      "return_value": {
+        "object_id": 140724260285320,
+        "value": "False",
+        "class": "builtins.bool"
+      },
+      "parent_id": 15,
+      "elapsed": 0,
+      "id": 16,
+      "event": "return",
+      "thread_id": 8
+    },
+    {
+      "return_value": {
+        "object_id": 140724260285320,
+        "value": "False",
+        "class": "builtins.bool"
+      },
+      "parent_id": 14,
+      "elapsed": 0,
+      "id": 17,
+      "event": "return",
+      "thread_id": 8
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 2727010587792,
+        "value": "<django.contrib.auth.models.AnonymousUser object at 0x0000027AEE7F5490>",
+        "name": "self",
+        "class": "django.contrib.auth.models.AnonymousUser"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 2726976537200,
+          "value": "'token_blacklist'",
+          "name": "module",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 18,
+      "event": "call",
+      "thread_id": 8,
+      "defined_class": "django.contrib.auth.models.AnonymousUser",
+      "method_id": "has_module_perms",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py",
+      "lineno": 487
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 2727011201040,
+        "value": "<django.contrib.auth.backends.ModelBackend object at 0x0000027AEE88B010>",
+        "name": "self",
+        "class": "django.contrib.auth.backends.ModelBackend"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 2727010587792,
+          "value": "<django.contrib.auth.models.AnonymousUser object at 0x0000027AEE7F5490>",
+          "name": "user_obj",
+          "class": "django.contrib.auth.models.AnonymousUser"
+        },
+        {
+          "kind": "req",
+          "object_id": 2726976537200,
+          "value": "'token_blacklist'",
+          "name": "app_label",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 19,
+      "event": "call",
+      "thread_id": 8,
+      "defined_class": "django.contrib.auth.backends.ModelBackend",
+      "method_id": "has_module_perms",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\backends.py",
+      "lineno": 115
+    },
+    {
+      "return_value": {
+        "object_id": 140724260285320,
+        "value": "False",
+        "class": "builtins.bool"
+      },
+      "parent_id": 19,
+      "elapsed": 0,
+      "id": 20,
+      "event": "return",
+      "thread_id": 8
+    },
+    {
+      "return_value": {
+        "object_id": 140724260285320,
+        "value": "False",
+        "class": "builtins.bool"
+      },
+      "parent_id": 18,
+      "elapsed": 0,
+      "id": 21,
+      "event": "return",
+      "thread_id": 8
+    },
+    {
+      "receiver": {
+        "object_id": 2727014954960,
+        "value": "<Template template_string=\"{% extends \"registra...\">",
+        "class": "django.template.base.Template"
+      },
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\jazzmin\\templates\\admin\\login.html",
+      "id": 22,
+      "event": "call",
+      "thread_id": 8,
+      "defined_class": "<templates>.CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesJazzminTemplatesAdminLoginHtml",
+      "method_id": "render",
+      "static": false
+    },
+    {
+      "parent_id": 22,
+      "elapsed": 0.030999999988125637,
+      "id": 23,
+      "event": "return",
+      "thread_id": 8
+    },
+    {
+      "http_server_response": {
+        "status_code": 200,
+        "mime_type": "text/html; charset=utf-8",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8",
+          "Expires": "Sun, 17 Dec 2023 19:54:24 GMT",
+          "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+          "Vary": "Cookie, origin",
+          "X-Frame-Options": "DENY",
+          "Content-Length": "3062",
+          "X-Content-Type-Options": "nosniff",
+          "Referrer-Policy": "same-origin",
+          "Cross-Origin-Opener-Policy": "same-origin"
+        }
+      },
+      "parent_id": 1,
+      "elapsed": 0.07799999999406282,
+      "id": 24,
+      "event": "return",
+      "thread_id": 8
+    }
+  ],
+  "version": "1.9",
+  "metadata": {
+    "language": {
+      "name": "python",
+      "engine": "CPython",
+      "version": "3.11.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-python"
+    },
+    "git": {
+      "repository": "",
+      "branch": "main",
+      "commit": "a1037bb8cdf4281c1fe65da05a374c551daeafba"
+    },
+    "frameworks": [
+      {
+        "name": "Django",
+        "version": "4.2.7"
+      }
+    ],
+    "name": "GET /admin/login/ (200) - 02:54:24.783",
+    "timestamp": 1702842864.783619,
+    "recorder": {
+      "name": "record_requests"
+    }
+  },
+  "classMap": [
+    {
+      "name": "django",
+      "type": "package",
+      "children": [
+        {
+          "name": "contrib",
+          "type": "package",
+          "children": [
+            {
+              "name": "auth",
+              "type": "package",
+              "children": [
+                {
+                  "name": "models",
+                  "type": "package",
+                  "children": [
+                    {
+                      "name": "AnonymousUser",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "has_module_perms",
+                          "type": "function",
+                          "labels": [
+                            "security.authorization"
+                          ],
+                          "static": false,
+                          "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\models.py:487"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "backends",
+                  "type": "package",
+                  "children": [
+                    {
+                      "name": "ModelBackend",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "has_module_perms",
+                          "type": "function",
+                          "labels": [
+                            "security.authorization"
+                          ],
+                          "static": false,
+                          "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\backends.py:115"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET /admin/login/"
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesJazzminTemplatesAdminLoginHtml",
+      "children": [
+        {
+          "type": "function",
+          "name": "render",
+          "static": false
+        }
+      ]
+    }
+  ]
+}

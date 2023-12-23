@@ -1,0 +1,27 @@
+command 
+- python -m django startproject backend 
+- python -m django startapp api 
+
+
+
+timeline 
+Django
+1) setting installed app 
+2) middleware, cors headers
+3) model USER
+    - User(AbstractUser)
+    - Profile() 
+    - post_save
+    - admin.py 
+        userAdmin
+        profileAdmin
+    - pip install django-jazzmin
+
+4) serializer
+
+5) view and urls
+    -
+
+React 
+1) AuthContext
+2) useAxios

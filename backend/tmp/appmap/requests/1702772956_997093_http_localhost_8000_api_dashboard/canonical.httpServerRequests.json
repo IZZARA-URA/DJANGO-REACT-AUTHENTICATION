@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /api/dashboard",
+    "parameters": "()",
+    "status": 301
+  }
+]

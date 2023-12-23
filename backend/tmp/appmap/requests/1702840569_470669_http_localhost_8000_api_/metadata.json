@@ -1,0 +1,21 @@
+{
+  "language": {
+    "name": "python",
+    "engine": "CPython",
+    "version": "3.11.2"
+  },
+  "client": {
+    "name": "appmap",
+    "url": "https://github.com/applandinc/appmap-python"
+  },
+  "git": {
+    "repository": "",
+    "branch": "main",
+    "commit": "a1037bb8cdf4281c1fe65da05a374c551daeafba"
+  },
+  "name": "GET /api/ (200) - 02:16:09.470",
+  "timestamp": 1702840569.470669,
+  "recorder": {
+    "name": "record_requests"
+  }
+}

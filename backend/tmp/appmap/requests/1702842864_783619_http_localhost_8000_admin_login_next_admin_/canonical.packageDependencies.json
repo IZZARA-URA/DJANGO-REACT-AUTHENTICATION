@@ -1,0 +1,10 @@
+[
+  {
+    "caller": "HTTP server requests",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesJazzminTemplatesAdminLoginHtml"
+  },
+  {
+    "caller": "HTTP server requests",
+    "callee": "django"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  "INSERT INTO \"api_profile\" (\"user_id\", \"full_name\", \"bio\", \"image\", \"verified\") VALUES (?, ?, ?, ?, ?) RETURNING \"api_profile\".\"id\"",
+  "INSERT INTO \"api_user\" (\"password\", \"last_login\", \"is_superuser\", \"first_name\", \"last_name\", \"is_staff\", \"is_active\", \"date_joined\", \"username\", \"email\") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING \"api_user\".\"id\"",
+  "SELECT ? AS \"a\" FROM \"api_user\" WHERE \"api_user\".\"email\" = ? LIMIT ?",
+  "UPDATE \"api_profile\" SET \"user_id\" = ?, \"full_name\" = ?, \"bio\" = ?, \"image\" = ?, \"verified\" = ? WHERE \"api_profile\".\"id\" = ?",
+  "UPDATE \"api_user\" SET \"password\" = ?, \"last_login\" = ?, \"is_superuser\" = ?, \"first_name\" = ?, \"last_name\" = ?, \"is_staff\" = ?, \"is_active\" = ?, \"date_joined\" = ?, \"username\" = ?, \"email\" = ? WHERE \"api_user\".\"id\" = ?"
+]

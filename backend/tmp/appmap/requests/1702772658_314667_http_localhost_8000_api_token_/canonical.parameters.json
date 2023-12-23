@@ -1,0 +1,10 @@
+[
+  "credentials",
+  "csrfmiddlewaretoken",
+  "email",
+  "kwargs",
+  "password",
+  "request",
+  "user",
+  "username"
+]

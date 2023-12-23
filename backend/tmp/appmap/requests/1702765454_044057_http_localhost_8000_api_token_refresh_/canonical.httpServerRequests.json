@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /api/token/refresh/",
+    "parameters": "()",
+    "status": 404
+  }
+]

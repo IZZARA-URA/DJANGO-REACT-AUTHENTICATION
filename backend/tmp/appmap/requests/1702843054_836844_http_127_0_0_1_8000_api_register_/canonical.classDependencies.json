@@ -1,0 +1,22 @@
+[
+  {
+    "caller": "POST /api/register/",
+    "callee": "INSERT INTO \"api_profile\" (\"user_id\", \"full_name\", \"bio\", \"image\", \"verified\") VALUES (3, '', '', 'default.jpg', 0) RETURNING \"api_profile\".\"id\""
+  },
+  {
+    "caller": "POST /api/register/",
+    "callee": "INSERT INTO \"api_user\" (\"password\", \"last_login\", \"is_superuser\", \"first_name\", \"last_name\", \"is_staff\", \"is_active\", \"date_joined\", \"username\", \"email\") VALUES ('', NULL, 0, '', '', 0, 1, '2023-12-17 19:57:34.188838', 'test00', 'test00@gmail.com') RETURNING \"api_user\".\"id\""
+  },
+  {
+    "caller": "POST /api/register/",
+    "callee": "SELECT 1 AS \"a\" FROM \"api_user\" WHERE \"api_user\".\"email\" = 'test00@gmail.com' LIMIT 1"
+  },
+  {
+    "caller": "POST /api/register/",
+    "callee": "UPDATE \"api_profile\" SET \"user_id\" = 3, \"full_name\" = '', \"bio\" = '', \"image\" = 'default.jpg', \"verified\" = 0 WHERE \"api_profile\".\"id\" = 3"
+  },
+  {
+    "caller": "POST /api/register/",
+    "callee": "UPDATE \"api_user\" SET \"password\" = 'pbkdf2_sha256$600000$hkaCZFZBSKfK1sqaQSyIwu$EevNGj0u7aOPSn6V754m0Uf/byBOEx8KMkxqXICmL+4=', \"last_login\" = NULL, \"is_superuser\" = 0, \"first_name\" = '', \"last_name\" = '', \"is_staff\" = 0, \"is_active\" = 1, \"date_joined\" = '2023-12-17 19:57:34.188838', \"username\" = 'test00', \"email\" = 'test00@gmail.com' WHERE \"api_user\".\"id\" = 3"
+  }
+]

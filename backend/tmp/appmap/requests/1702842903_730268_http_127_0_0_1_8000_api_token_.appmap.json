@@ -1,0 +1,309 @@
+{
+  "events": [
+    {
+      "http_server_request": {
+        "request_method": "POST",
+        "protocol": "HTTP/1.1",
+        "path_info": "/api/token/",
+        "normalized_path_info": "/api/token/",
+        "mime_type": "application/json",
+        "headers": {
+          "Content-Length": "47",
+          "Content-Type": "application/json",
+          "Host": "127.0.0.1:8000",
+          "Connection": "keep-alive",
+          "Sec-Ch-Ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Microsoft Edge\";v=\"120\"",
+          "Sec-Ch-Ua-Platform": "\"Windows\"",
+          "Sec-Ch-Ua-Mobile": "?0",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0",
+          "Accept": "*/*",
+          "Origin": "http://localhost:3000",
+          "Sec-Fetch-Site": "cross-site",
+          "Sec-Fetch-Mode": "cors",
+          "Sec-Fetch-Dest": "empty",
+          "Referer": "http://localhost:3000/",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept-Language": "en-US,en;q=0.9"
+        }
+      },
+      "message": [
+        {
+          "object_id": 2727010433456,
+          "value": "'test00@gmail.com'",
+          "name": "email",
+          "class": "builtins.str"
+        },
+        {
+          "object_id": 2727017146480,
+          "value": "'admin'",
+          "name": "password",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 1,
+      "event": "call",
+      "thread_id": 12
+    },
+    {
+      "static": true,
+      "parameters": [
+        {
+          "kind": "opt",
+          "object_id": 2727011471248,
+          "value": "<rest_framework.request.Request: POST '/api/token/'>",
+          "name": "request",
+          "class": "rest_framework.request.Request"
+        },
+        {
+          "kind": "keyrest",
+          "object_id": 2727012455936,
+          "value": "{'email': 'test00@gmail.com', 'password': 'admin', 'request': <rest_framework.request.Request: POST '/api/token/'>}",
+          "name": "credentials",
+          "class": "builtins.dict",
+          "properties": [
+            {
+              "name": "email",
+              "class": "builtins.str"
+            },
+            {
+              "name": "password",
+              "class": "builtins.str"
+            },
+            {
+              "name": "request",
+              "class": "rest_framework.request.Request"
+            }
+          ],
+          "size": 3
+        }
+      ],
+      "id": 2,
+      "event": "call",
+      "thread_id": 12,
+      "defined_class": "django.contrib.auth",
+      "method_id": "authenticate",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\__init__.py",
+      "lineno": 63
+    },
+    {
+      "static": false,
+      "receiver": {
+        "kind": "req",
+        "object_id": 2727013253200,
+        "value": "<django.contrib.auth.backends.ModelBackend object at 0x0000027AEEA80050>",
+        "name": "self",
+        "class": "django.contrib.auth.backends.ModelBackend"
+      },
+      "parameters": [
+        {
+          "kind": "req",
+          "object_id": 2727011471248,
+          "value": "<rest_framework.request.Request: POST '/api/token/'>",
+          "name": "request",
+          "class": "rest_framework.request.Request"
+        },
+        {
+          "kind": "opt",
+          "object_id": 140724260338888,
+          "value": "None",
+          "name": "username",
+          "class": "builtins.NoneType"
+        },
+        {
+          "kind": "opt",
+          "object_id": 2727011474736,
+          "value": "'admin'",
+          "name": "password",
+          "class": "builtins.str"
+        },
+        {
+          "kind": "keyrest",
+          "object_id": 2727012361792,
+          "value": "{'email': 'test00@gmail.com', 'password': 'admin'}",
+          "name": "kwargs",
+          "class": "builtins.dict",
+          "properties": [
+            {
+              "name": "email",
+              "class": "builtins.str"
+            },
+            {
+              "name": "password",
+              "class": "builtins.str"
+            }
+          ],
+          "size": 2
+        }
+      ],
+      "id": 3,
+      "event": "call",
+      "thread_id": 12,
+      "defined_class": "django.contrib.auth.backends.ModelBackend",
+      "method_id": "authenticate",
+      "path": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\backends.py",
+      "lineno": 40
+    },
+    {
+      "sql_query": {
+        "sql": "SELECT \"api_user\".\"id\", \"api_user\".\"password\", \"api_user\".\"last_login\", \"api_user\".\"is_superuser\", \"api_user\".\"first_name\", \"api_user\".\"last_name\", \"api_user\".\"is_staff\", \"api_user\".\"is_active\", \"api_user\".\"date_joined\", \"api_user\".\"username\", \"api_user\".\"email\" FROM \"api_user\" WHERE \"api_user\".\"email\" = 'test00@gmail.com' LIMIT 21",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 4,
+      "event": "call",
+      "thread_id": 12
+    },
+    {
+      "parent_id": 4,
+      "elapsed": 0,
+      "id": 5,
+      "event": "return",
+      "thread_id": 12
+    },
+    {
+      "return_value": {
+        "object_id": 140724260338888,
+        "value": "None",
+        "class": "builtins.NoneType"
+      },
+      "parent_id": 3,
+      "elapsed": 0.43898940086364746,
+      "id": 6,
+      "event": "return",
+      "thread_id": 12
+    },
+    {
+      "return_value": {
+        "object_id": 140724260338888,
+        "value": "None",
+        "class": "builtins.NoneType"
+      },
+      "parent_id": 2,
+      "elapsed": 0.43999314308166504,
+      "id": 7,
+      "event": "return",
+      "thread_id": 12
+    },
+    {
+      "http_server_response": {
+        "status_code": 401,
+        "mime_type": "application/json",
+        "headers": {
+          "Content-Type": "application/json",
+          "WWW-Authenticate": "Bearer realm=\"api\"",
+          "Vary": "Accept, origin",
+          "Allow": "POST, OPTIONS",
+          "X-Frame-Options": "DENY",
+          "Content-Length": "63",
+          "access-control-allow-origin": "*",
+          "X-Content-Type-Options": "nosniff",
+          "Referrer-Policy": "same-origin",
+          "Cross-Origin-Opener-Policy": "same-origin"
+        }
+      },
+      "parent_id": 1,
+      "elapsed": 0.4380000000091968,
+      "id": 8,
+      "event": "return",
+      "thread_id": 12
+    }
+  ],
+  "version": "1.9",
+  "metadata": {
+    "language": {
+      "name": "python",
+      "engine": "CPython",
+      "version": "3.11.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-python"
+    },
+    "git": {
+      "repository": "",
+      "branch": "main",
+      "commit": "a1037bb8cdf4281c1fe65da05a374c551daeafba"
+    },
+    "frameworks": [
+      {
+        "name": "Django",
+        "version": "4.2.7"
+      }
+    ],
+    "name": "POST /api/token/ (401) - 02:55:03.730",
+    "timestamp": 1702842903.730268,
+    "recorder": {
+      "name": "record_requests"
+    }
+  },
+  "classMap": [
+    {
+      "name": "django",
+      "type": "package",
+      "children": [
+        {
+          "name": "contrib",
+          "type": "package",
+          "children": [
+            {
+              "name": "auth",
+              "type": "class",
+              "children": [
+                {
+                  "name": "authenticate",
+                  "type": "function",
+                  "labels": [
+                    "security.authentication"
+                  ],
+                  "static": true,
+                  "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\__init__.py:63"
+                },
+                {
+                  "name": "backends",
+                  "type": "package",
+                  "children": [
+                    {
+                      "name": "ModelBackend",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "authenticate",
+                          "type": "function",
+                          "labels": [
+                            "security.authentication"
+                          ],
+                          "static": false,
+                          "location": "C:\\Users\\hlnatao\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django\\contrib\\auth\\backends.py:40"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "POST /api/token/"
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "SELECT \"api_user\".\"id\", \"api_user\".\"password\", \"api_user\".\"last_login\", \"api_user\".\"is_superuser\", \"api_user\".\"first_name\", \"api_user\".\"last_name\", \"api_user\".\"is_staff\", \"api_user\".\"is_active\", \"api_user\".\"date_joined\", \"api_user\".\"username\", \"api_user\".\"email\" FROM \"api_user\" WHERE \"api_user\".\"email\" = 'test00@gmail.com' LIMIT 21"
+        }
+      ]
+    }
+  ]
+}

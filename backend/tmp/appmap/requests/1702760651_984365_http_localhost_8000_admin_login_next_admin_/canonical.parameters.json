@@ -1,0 +1,13 @@
+[
+  "app_label",
+  "credentials",
+  "csrfmiddlewaretoken",
+  "kwargs",
+  "module",
+  "next",
+  "password",
+  "request",
+  "user",
+  "user_obj",
+  "username"
+]

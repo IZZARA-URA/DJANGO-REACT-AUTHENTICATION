@@ -1,0 +1,250 @@
+{
+  "events": [
+    {
+      "http_server_request": {
+        "request_method": "POST",
+        "protocol": "HTTP/1.1",
+        "path_info": "/api/register/",
+        "normalized_path_info": "/api/register/",
+        "mime_type": "application/json",
+        "headers": {
+          "Content-Length": "93",
+          "Content-Type": "application/json",
+          "Host": "127.0.0.1:8000",
+          "Connection": "keep-alive",
+          "Sec-Ch-Ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Microsoft Edge\";v=\"120\"",
+          "Sec-Ch-Ua-Platform": "\"Windows\"",
+          "Sec-Ch-Ua-Mobile": "?0",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0",
+          "Accept": "*/*",
+          "Origin": "http://localhost:3000",
+          "Sec-Fetch-Site": "cross-site",
+          "Sec-Fetch-Mode": "cors",
+          "Sec-Fetch-Dest": "empty",
+          "Referer": "http://localhost:3000/",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept-Language": "en-US,en;q=0.9"
+        }
+      },
+      "message": [
+        {
+          "object_id": 2727022362128,
+          "value": "'test00@gmail.com'",
+          "name": "email",
+          "class": "builtins.str"
+        },
+        {
+          "object_id": 2727017176752,
+          "value": "'test00'",
+          "name": "username",
+          "class": "builtins.str"
+        },
+        {
+          "object_id": 2727017182448,
+          "value": "'ru8a@8U8'",
+          "name": "password",
+          "class": "builtins.str"
+        },
+        {
+          "object_id": 2727017175920,
+          "value": "'ru8a@8U8'",
+          "name": "password2",
+          "class": "builtins.str"
+        }
+      ],
+      "id": 1,
+      "event": "call",
+      "thread_id": 17
+    },
+    {
+      "sql_query": {
+        "sql": "SELECT 1 AS \"a\" FROM \"api_user\" WHERE \"api_user\".\"email\" = 'test00@gmail.com' LIMIT 1",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 2,
+      "event": "call",
+      "thread_id": 17
+    },
+    {
+      "parent_id": 2,
+      "elapsed": 0,
+      "id": 3,
+      "event": "return",
+      "thread_id": 17
+    },
+    {
+      "sql_query": {
+        "sql": "INSERT INTO \"api_user\" (\"password\", \"last_login\", \"is_superuser\", \"first_name\", \"last_name\", \"is_staff\", \"is_active\", \"date_joined\", \"username\", \"email\") VALUES ('', NULL, 0, '', '', 0, 1, '2023-12-17 19:57:34.188838', 'test00', 'test00@gmail.com') RETURNING \"api_user\".\"id\"",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 4,
+      "event": "call",
+      "thread_id": 17
+    },
+    {
+      "parent_id": 4,
+      "elapsed": 0,
+      "id": 5,
+      "event": "return",
+      "thread_id": 17
+    },
+    {
+      "sql_query": {
+        "sql": "INSERT INTO \"api_profile\" (\"user_id\", \"full_name\", \"bio\", \"image\", \"verified\") VALUES (3, '', '', 'default.jpg', 0) RETURNING \"api_profile\".\"id\"",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 6,
+      "event": "call",
+      "thread_id": 17
+    },
+    {
+      "parent_id": 6,
+      "elapsed": 0,
+      "id": 7,
+      "event": "return",
+      "thread_id": 17
+    },
+    {
+      "sql_query": {
+        "sql": "UPDATE \"api_profile\" SET \"user_id\" = 3, \"full_name\" = '', \"bio\" = '', \"image\" = 'default.jpg', \"verified\" = 0 WHERE \"api_profile\".\"id\" = 3",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 8,
+      "event": "call",
+      "thread_id": 17
+    },
+    {
+      "parent_id": 8,
+      "elapsed": 0,
+      "id": 9,
+      "event": "return",
+      "thread_id": 17
+    },
+    {
+      "sql_query": {
+        "sql": "UPDATE \"api_user\" SET \"password\" = 'pbkdf2_sha256$600000$hkaCZFZBSKfK1sqaQSyIwu$EevNGj0u7aOPSn6V754m0Uf/byBOEx8KMkxqXICmL+4=', \"last_login\" = NULL, \"is_superuser\" = 0, \"first_name\" = '', \"last_name\" = '', \"is_staff\" = 0, \"is_active\" = 1, \"date_joined\" = '2023-12-17 19:57:34.188838', \"username\" = 'test00', \"email\" = 'test00@gmail.com' WHERE \"api_user\".\"id\" = 3",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 10,
+      "event": "call",
+      "thread_id": 17
+    },
+    {
+      "parent_id": 10,
+      "elapsed": 0.014999999999417923,
+      "id": 11,
+      "event": "return",
+      "thread_id": 17
+    },
+    {
+      "sql_query": {
+        "sql": "UPDATE \"api_profile\" SET \"user_id\" = 3, \"full_name\" = '', \"bio\" = '', \"image\" = 'default.jpg', \"verified\" = 0 WHERE \"api_profile\".\"id\" = 3",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 12,
+      "event": "call",
+      "thread_id": 17
+    },
+    {
+      "parent_id": 12,
+      "elapsed": 0,
+      "id": 13,
+      "event": "return",
+      "thread_id": 17
+    },
+    {
+      "http_server_response": {
+        "status_code": 201,
+        "mime_type": "application/json",
+        "headers": {
+          "Content-Type": "application/json",
+          "Vary": "Accept, Cookie, origin",
+          "Allow": "POST, OPTIONS",
+          "X-Frame-Options": "DENY",
+          "Content-Length": "48",
+          "access-control-allow-origin": "*",
+          "X-Content-Type-Options": "nosniff",
+          "Referrer-Policy": "same-origin",
+          "Cross-Origin-Opener-Policy": "same-origin"
+        }
+      },
+      "parent_id": 1,
+      "elapsed": 0.6560000000026776,
+      "id": 14,
+      "event": "return",
+      "thread_id": 17
+    }
+  ],
+  "version": "1.9",
+  "metadata": {
+    "language": {
+      "name": "python",
+      "engine": "CPython",
+      "version": "3.11.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-python"
+    },
+    "git": {
+      "repository": "",
+      "branch": "main",
+      "commit": "a1037bb8cdf4281c1fe65da05a374c551daeafba"
+    },
+    "frameworks": [
+      {
+        "name": "Django",
+        "version": "4.2.7"
+      }
+    ],
+    "name": "POST /api/register/ (201) - 02:57:34.836",
+    "timestamp": 1702843054.836844,
+    "recorder": {
+      "name": "record_requests"
+    }
+  },
+  "classMap": [
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "POST /api/register/"
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "SELECT 1 AS \"a\" FROM \"api_user\" WHERE \"api_user\".\"email\" = 'test00@gmail.com' LIMIT 1"
+        },
+        {
+          "type": "query",
+          "name": "INSERT INTO \"api_user\" (\"password\", \"last_login\", \"is_superuser\", \"first_name\", \"last_name\", \"is_staff\", \"is_active\", \"date_joined\", \"username\", \"email\") VALUES ('', NULL, 0, '', '', 0, 1, '2023-12-17 19:57:34.188838', 'test00', 'test00@gmail.com') RETURNING \"api_user\".\"id\""
+        },
+        {
+          "type": "query",
+          "name": "INSERT INTO \"api_profile\" (\"user_id\", \"full_name\", \"bio\", \"image\", \"verified\") VALUES (3, '', '', 'default.jpg', 0) RETURNING \"api_profile\".\"id\""
+        },
+        {
+          "type": "query",
+          "name": "UPDATE \"api_profile\" SET \"user_id\" = 3, \"full_name\" = '', \"bio\" = '', \"image\" = 'default.jpg', \"verified\" = 0 WHERE \"api_profile\".\"id\" = 3"
+        },
+        {
+          "type": "query",
+          "name": "UPDATE \"api_user\" SET \"password\" = 'pbkdf2_sha256$600000$hkaCZFZBSKfK1sqaQSyIwu$EevNGj0u7aOPSn6V754m0Uf/byBOEx8KMkxqXICmL+4=', \"last_login\" = NULL, \"is_superuser\" = 0, \"first_name\" = '', \"last_name\" = '', \"is_staff\" = 0, \"is_active\" = 1, \"date_joined\" = '2023-12-17 19:57:34.188838', \"username\" = 'test00', \"email\" = 'test00@gmail.com' WHERE \"api_user\".\"id\" = 3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+[
+  {
+    "route": "OPTIONS /api/token/refresh/",
+    "parameters": "()",
+    "status": 200
+  }
+]

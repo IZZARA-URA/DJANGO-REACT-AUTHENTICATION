@@ -1,0 +1,7 @@
+[
+  {
+    "route": "POST /api/token/",
+    "parameters": "(csrfmiddlewaretoken,email,password)",
+    "status": 200
+  }
+]

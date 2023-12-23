@@ -1,0 +1,18 @@
+[
+  {
+    "caller": "GET /api/",
+    "callee": "<templates>/UnknownSource#render"
+  },
+  {
+    "caller": "GET /api/",
+    "callee": "SELECT \"api_user\".\"id\", \"api_user\".\"password\", \"api_user\".\"last_login\", \"api_user\".\"is_superuser\", \"api_user\".\"first_name\", \"api_user\".\"last_name\", \"api_user\".\"is_staff\", \"api_user\".\"is_active\", \"api_user\".\"date_joined\", \"api_user\".\"username\", \"api_user\".\"email\" FROM \"api_user\" WHERE \"api_user\".\"id\" = 1 LIMIT 21"
+  },
+  {
+    "caller": "GET /api/",
+    "callee": "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > '2023-12-16 22:15:27.315816' AND \"django_session\".\"session_key\" = '5gr1f0nz5l7y0gtpjzhnlhi0eu1s0tr6') LIMIT 21"
+  },
+  {
+    "caller": "GET /api/",
+    "callee": "django/contrib"
+  }
+]
