@@ -25,3 +25,100 @@ Django
 React 
 1) AuthContext
 2) useAxios
+
+
+
+
+
+
+
+
+
+
+
+
+Keywords -Python- 
+Python Decorators 
+    - Prerequisites for learning decorators
+        - Nested Function 
+
+        def outer(x): 
+            def inner(y):
+                return x + y 
+            return inner 
+
+        add_five = outer(5)
+        result = add_result(6)
+        print(result)
+        # 11
+
+        ---------------------------------------
+        - Pass Function as Argument 
+
+        def add(x, y):
+            return x + y 
+        
+        def calculate(func, x, y):
+            return func(x, y)
+
+        result = calculate(add, 4, 6)
+        print(result) 
+        # 10
+
+        ---------------------------------------
+        - Return a Funtion as a Value
+        
+        def greeting(name):
+            def hello(): 
+                return "Hello, " + name + "!" 
+            return hello
+
+        greet = greeting("Atlantis")
+        print(greet())
+        # Hello, Atlantis
+        
+        ---------------------------------------
+
+    - Python Decorators
+        ---------------------------------------
+        without decorator
+        ---------------------------------------
+        def make_pretty(func)
+            def inner():
+                print("I got decorated)
+                func() 
+        return inner 
+
+        def ordinary():
+            print("ordinary)
+
+        decorated_function = make_pretty(ordinary)
+        decorated_function()
+
+        ---------------------------------------
+        with decorator
+        ---------------------------------------
+        def make_pretty(func):
+            def inner(): 
+                print("decorated)
+                func() 
+        return inner 
+
+        @make_pretty
+        def ordinary(): 
+            pritn("ordinary)
+
+        ordinary()
+
+        ---------------------------------------
+        Same output
+        function below "@" with function will called by 
+        these function, and into argument 
+        
+
+
+@property ? 
+
+subQuery in django 
+distinct 
+adnnotate

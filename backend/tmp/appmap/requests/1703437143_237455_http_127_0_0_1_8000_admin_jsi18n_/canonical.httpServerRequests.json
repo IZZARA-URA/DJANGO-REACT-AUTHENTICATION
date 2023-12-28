@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /admin/jsi18n/",
+    "parameters": "()",
+    "status": 200
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "language": {
+    "name": "python",
+    "engine": "CPython",
+    "version": "3.11.2"
+  },
+  "client": {
+    "name": "appmap",
+    "url": "https://github.com/applandinc/appmap-python"
+  },
+  "git": {
+    "repository": "https://github.com/IZZARA-URA/DJANGO-REACT-AUTHENTICATION.git",
+    "branch": "main",
+    "commit": "a1432c88c29b304eba7f214124865bf9294c7ee8"
+  },
+  "frameworks": [
+    {
+      "name": "Django",
+      "version": "4.2.7"
+    }
+  ],
+  "name": "POST /admin/login/ (302) - 23:56:55.317",
+  "timestamp": 1703437015.317536,
+  "recorder": {
+    "name": "record_requests"
+  }
+}

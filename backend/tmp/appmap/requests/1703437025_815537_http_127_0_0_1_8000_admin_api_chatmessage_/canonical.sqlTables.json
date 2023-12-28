@@ -1,0 +1,7 @@
+[
+  "api_chatmessage",
+  "api_user",
+  "auth_permission",
+  "django_content_type",
+  "django_session"
+]

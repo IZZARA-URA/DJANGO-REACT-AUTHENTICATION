@@ -1,1 +1,125 @@
-{"version": "1.9", "metadata": {"language": {"name": "python", "engine": "CPython", "version": "3.11.2"}, "client": {"name": "appmap", "url": "https://github.com/applandinc/appmap-python"}, "git": {"repository": "", "branch": "main", "commit": "a1037bb8cdf4281c1fe65da05a374c551daeafba", "status": ["?? ../appmap.yml", "?? ./", "?? ../frontend/", "?? ../timeline.txt"]}, "frameworks": [{"name": "Django", "version": "4.2.7"}], "name": "GET /api/test/ (200) - 04:57:40.091", "timestamp": 1703368660.091123, "recorder": {"name": "record_requests"}}, "events": [{"http_server_request": {"request_method": "GET", "protocol": "HTTP/1.1", "path_info": "/api/test/", "normalized_path_info": "/api/test/", "mime_type": "text/plain", "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAzMzY4OTU5LCJpYXQiOjE3MDMyNzI0MDMsImp0aSI6ImQ5OTQ4NDRhYTlmNTRmM2RhNDRhNTQzMTc5MjZiNmI3IiwidXNlcl9pZCI6MSwiZnVsbF9uYW1lIjoiIiwidXNlcm5hbWUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiYmlvIjoiIiwiaW1hZ2UiOiJkZWZhdWx0LmpwZyIsInZlcmlmaWVkIjpmYWxzZX0.0FoFkohThjEJiGFsyEKvUw0x9oeRM-N0amlLCVSDMFo", "headers": {"Content-Length": "", "Content-Type": "text/plain", "Host": "127.0.0.1:8000", "Connection": "keep-alive", "Sec-Ch-Ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Microsoft Edge\";v=\"120\"", "Accept": "application/json, text/plain, */*", "Sec-Ch-Ua-Mobile": "?0", "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAzMzY4OTU5LCJpYXQiOjE3MDMyNzI0MDMsImp0aSI6ImQ5OTQ4NDRhYTlmNTRmM2RhNDRhNTQzMTc5MjZiNmI3IiwidXNlcl9pZCI6MSwiZnVsbF9uYW1lIjoiIiwidXNlcm5hbWUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiYmlvIjoiIiwiaW1hZ2UiOiJkZWZhdWx0LmpwZyIsInZlcmlmaWVkIjpmYWxzZX0.0FoFkohThjEJiGFsyEKvUw0x9oeRM-N0amlLCVSDMFo", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0", "Sec-Ch-Ua-Platform": "\"Windows\"", "Origin": "http://localhost:3000", "Sec-Fetch-Site": "cross-site", "Sec-Fetch-Mode": "cors", "Sec-Fetch-Dest": "empty", "Referer": "http://localhost:3000/", "Accept-Encoding": "gzip, deflate, br", "Accept-Language": "en-US,en;q=0.9"}}, "message": [], "id": 41, "event": "call", "thread_id": 3}, {"sql_query": {"sql": "SELECT \"api_user\".\"id\", \"api_user\".\"password\", \"api_user\".\"last_login\", \"api_user\".\"is_superuser\", \"api_user\".\"first_name\", \"api_user\".\"last_name\", \"api_user\".\"is_staff\", \"api_user\".\"is_active\", \"api_user\".\"date_joined\", \"api_user\".\"username\", \"api_user\".\"email\" FROM \"api_user\" WHERE \"api_user\".\"id\" = 1 LIMIT 21", "database_type": "sqlite", "server_version": "3.39.4"}, "id": 42, "event": "call", "thread_id": 3}, {"parent_id": 42, "elapsed": 0.0, "id": 43, "event": "return", "thread_id": 3}, {"http_server_response": {"status_code": 200, "mime_type": "application/json", "headers": {"Content-Type": "application/json", "Vary": "Accept, Cookie, origin", "Allow": "OPTIONS, POST, GET", "X-Frame-Options": "DENY", "Content-Length": "75", "access-control-allow-origin": "*", "X-Content-Type-Options": "nosniff", "Referrer-Policy": "same-origin", "Cross-Origin-Opener-Policy": "same-origin"}}, "parent_id": 41, "elapsed": 0.015000000013969839, "id": 44, "event": "return", "thread_id": 3}], "classMap": []}
+{
+  "events": [
+    {
+      "http_server_request": {
+        "request_method": "GET",
+        "protocol": "HTTP/1.1",
+        "path_info": "/api/test/",
+        "normalized_path_info": "/api/test/",
+        "mime_type": "text/plain",
+        "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAzMzY4OTU5LCJpYXQiOjE3MDMyNzI0MDMsImp0aSI6ImQ5OTQ4NDRhYTlmNTRmM2RhNDRhNTQzMTc5MjZiNmI3IiwidXNlcl9pZCI6MSwiZnVsbF9uYW1lIjoiIiwidXNlcm5hbWUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiYmlvIjoiIiwiaW1hZ2UiOiJkZWZhdWx0LmpwZyIsInZlcmlmaWVkIjpmYWxzZX0.0FoFkohThjEJiGFsyEKvUw0x9oeRM-N0amlLCVSDMFo",
+        "headers": {
+          "Content-Length": "",
+          "Content-Type": "text/plain",
+          "Host": "127.0.0.1:8000",
+          "Connection": "keep-alive",
+          "Sec-Ch-Ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Microsoft Edge\";v=\"120\"",
+          "Accept": "application/json, text/plain, */*",
+          "Sec-Ch-Ua-Mobile": "?0",
+          "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAzMzY4OTU5LCJpYXQiOjE3MDMyNzI0MDMsImp0aSI6ImQ5OTQ4NDRhYTlmNTRmM2RhNDRhNTQzMTc5MjZiNmI3IiwidXNlcl9pZCI6MSwiZnVsbF9uYW1lIjoiIiwidXNlcm5hbWUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiYmlvIjoiIiwiaW1hZ2UiOiJkZWZhdWx0LmpwZyIsInZlcmlmaWVkIjpmYWxzZX0.0FoFkohThjEJiGFsyEKvUw0x9oeRM-N0amlLCVSDMFo",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0",
+          "Sec-Ch-Ua-Platform": "\"Windows\"",
+          "Origin": "http://localhost:3000",
+          "Sec-Fetch-Site": "cross-site",
+          "Sec-Fetch-Mode": "cors",
+          "Sec-Fetch-Dest": "empty",
+          "Referer": "http://localhost:3000/",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept-Language": "en-US,en;q=0.9"
+        }
+      },
+      "id": 1,
+      "event": "call",
+      "thread_id": 3
+    },
+    {
+      "sql_query": {
+        "sql": "SELECT \"api_user\".\"id\", \"api_user\".\"password\", \"api_user\".\"last_login\", \"api_user\".\"is_superuser\", \"api_user\".\"first_name\", \"api_user\".\"last_name\", \"api_user\".\"is_staff\", \"api_user\".\"is_active\", \"api_user\".\"date_joined\", \"api_user\".\"username\", \"api_user\".\"email\" FROM \"api_user\" WHERE \"api_user\".\"id\" = 1 LIMIT 21",
+        "database_type": "sqlite",
+        "server_version": "3.39.4"
+      },
+      "id": 2,
+      "event": "call",
+      "thread_id": 3
+    },
+    {
+      "parent_id": 2,
+      "elapsed": 0,
+      "id": 3,
+      "event": "return",
+      "thread_id": 3
+    },
+    {
+      "http_server_response": {
+        "status_code": 200,
+        "mime_type": "application/json",
+        "headers": {
+          "Content-Type": "application/json",
+          "Vary": "Accept, Cookie, origin",
+          "Allow": "OPTIONS, POST, GET",
+          "X-Frame-Options": "DENY",
+          "Content-Length": "75",
+          "access-control-allow-origin": "*",
+          "X-Content-Type-Options": "nosniff",
+          "Referrer-Policy": "same-origin",
+          "Cross-Origin-Opener-Policy": "same-origin"
+        }
+      },
+      "parent_id": 1,
+      "elapsed": 0.015000000013969839,
+      "id": 4,
+      "event": "return",
+      "thread_id": 3
+    }
+  ],
+  "version": "1.9",
+  "metadata": {
+    "language": {
+      "name": "python",
+      "engine": "CPython",
+      "version": "3.11.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-python"
+    },
+    "git": {
+      "repository": "",
+      "branch": "main",
+      "commit": "a1037bb8cdf4281c1fe65da05a374c551daeafba"
+    },
+    "frameworks": [
+      {
+        "name": "Django",
+        "version": "4.2.7"
+      }
+    ],
+    "name": "GET /api/test/ (200) - 04:57:40.091",
+    "timestamp": 1703368660.091123,
+    "recorder": {
+      "name": "record_requests"
+    }
+  },
+  "classMap": [
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET /api/test/"
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "SELECT \"api_user\".\"id\", \"api_user\".\"password\", \"api_user\".\"last_login\", \"api_user\".\"is_superuser\", \"api_user\".\"first_name\", \"api_user\".\"last_name\", \"api_user\".\"is_staff\", \"api_user\".\"is_active\", \"api_user\".\"date_joined\", \"api_user\".\"username\", \"api_user\".\"email\" FROM \"api_user\" WHERE \"api_user\".\"id\" = 1 LIMIT 21"
+        }
+      ]
+    }
+  ]
+}

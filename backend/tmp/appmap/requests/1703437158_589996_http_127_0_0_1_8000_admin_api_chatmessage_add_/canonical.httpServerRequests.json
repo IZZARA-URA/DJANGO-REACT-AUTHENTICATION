@@ -1,0 +1,7 @@
+[
+  {
+    "route": "POST /admin/api/chatmessage/add/",
+    "parameters": "(csrfmiddlewaretoken,user,sender,reciever,message,_save)",
+    "status": 302
+  }
+]

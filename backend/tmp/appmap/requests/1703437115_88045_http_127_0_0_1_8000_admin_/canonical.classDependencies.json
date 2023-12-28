@@ -1,0 +1,30 @@
+[
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesJazzminTemplatesAdminIndexHtml#render",
+    "callee": "SELECT \"django_admin_log\".\"id\", \"django_admin_log\".\"action_time\", \"django_admin_log\".\"user_id\", \"django_admin_log\".\"content_type_id\", \"django_admin_log\".\"object_id\", \"django_admin_log\".\"object_repr\", \"django_admin_log\".\"action_flag\", \"django_admin_log\".\"change_message\", \"api_user\".\"id\", \"api_user\".\"password\", \"api_user\".\"last_login\", \"api_user\".\"is_superuser\", \"api_user\".\"first_name\", \"api_user\".\"last_name\", \"api_user\".\"is_staff\", \"api_user\".\"is_active\", \"api_user\".\"date_joined\", \"api_user\".\"username\", \"api_user\".\"email\", \"django_content_type\".\"id\", \"django_content_type\".\"app_label\", \"django_content_type\".\"model\" FROM \"django_admin_log\" INNER JOIN \"api_user\" ON (\"django_admin_log\".\"user_id\" = \"api_user\".\"id\") LEFT OUTER JOIN \"django_content_type\" ON (\"django_admin_log\".\"content_type_id\" = \"django_content_type\".\"id\") WHERE \"django_admin_log\".\"user_id\" = 1 ORDER BY \"django_admin_log\".\"action_time\" DESC LIMIT 6"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesJazzminTemplatesAdminIndexHtml#render",
+    "callee": "SELECT \"django_content_type\".\"app_label\", \"auth_permission\".\"codename\" FROM \"auth_permission\" INNER JOIN \"django_content_type\" ON (\"auth_permission\".\"content_type_id\" = \"django_content_type\".\"id\")"
+  },
+  {
+    "caller": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesJazzminTemplatesAdminIndexHtml#render",
+    "callee": "django/contrib"
+  },
+  {
+    "caller": "GET /admin/",
+    "callee": "<templates>/CUsersHlnataoAppdataLocalProgramsPythonPython311LibSitePackagesJazzminTemplatesAdminIndexHtml#render"
+  },
+  {
+    "caller": "GET /admin/",
+    "callee": "SELECT \"api_user\".\"id\", \"api_user\".\"password\", \"api_user\".\"last_login\", \"api_user\".\"is_superuser\", \"api_user\".\"first_name\", \"api_user\".\"last_name\", \"api_user\".\"is_staff\", \"api_user\".\"is_active\", \"api_user\".\"date_joined\", \"api_user\".\"username\", \"api_user\".\"email\" FROM \"api_user\" WHERE \"api_user\".\"id\" = 1 LIMIT 21"
+  },
+  {
+    "caller": "GET /admin/",
+    "callee": "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > '2023-12-24 16:58:35.739453' AND \"django_session\".\"session_key\" = 'b02vhcyjlfpax0ws3qv7fa0luadsycoz') LIMIT 21"
+  },
+  {
+    "caller": "GET /admin/",
+    "callee": "django/contrib"
+  }
+]

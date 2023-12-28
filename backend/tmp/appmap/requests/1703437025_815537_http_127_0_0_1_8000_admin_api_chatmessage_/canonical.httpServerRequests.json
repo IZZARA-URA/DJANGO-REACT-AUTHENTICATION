@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /admin/api/chatmessage/",
+    "parameters": "()",
+    "status": 200
+  }
+]

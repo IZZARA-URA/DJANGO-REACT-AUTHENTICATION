@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /admin/login/",
+    "parameters": "(next)",
+    "status": 200
+  }
+]

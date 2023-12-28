@@ -1,0 +1,7 @@
+[
+  {
+    "route": "POST /admin/login/",
+    "parameters": "(next,csrfmiddlewaretoken,username,password)",
+    "status": 302
+  }
+]
