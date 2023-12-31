@@ -31,6 +31,9 @@ function App() {
             <Route Component={Mesaage} element={<PrivateRoute/>} exact path='/inbox'/>
             <Route Component={MessageDetail} element={<PrivateRoute/>}  exact path="/inbox/:id"/>
             {/* <Route component={SearchUsers} path="/search/:username" exact /> */}
+
+            <Route path="*" element={<NotFoundPage />} />
+
           </Routes>
         </AuthProvider>
       </Router>
