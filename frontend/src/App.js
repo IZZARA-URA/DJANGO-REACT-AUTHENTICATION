@@ -10,6 +10,8 @@ import HomePage from './views/HomePage';
 import LoginPage from './views/LoginPage';
 import RegisterPage from './views/RegisterPage';
 import NavBar from './views/NavBar';
+import Mesaage from './views/Message'
+import MessageDetail from './views/MessageDetail';
 
 function App() {
   return (
@@ -20,10 +22,15 @@ function App() {
 
           <Routes>
             <Route exact path='/' element={<PrivateRoute/>}/>
+
             <Route Component={LoginPage} path='/login'/>
-            <Route exact Component={RegisterPage} path='/register'/>
-            <Route exact Component={HomePage} path='/homepage'/>
-            <Route exact Component={Dashboard} path='/dashboard'/>
+            <Route Component={RegisterPage} path='/register'/>
+            <Route Component={HomePage} path='/homepage'/>
+            <Route Component={Dashboard} path='/dashboard'/>
+
+            <Route Component={Mesaage} element={<PrivateRoute/>} exact path='/inbox'/>
+            <Route Component={MessageDetail} element={<PrivateRoute/>}  exact path="/inbox/:id"/>
+            {/* <Route component={SearchUsers} path="/search/:username" exact /> */}
           </Routes>
         </AuthProvider>
       </Router>

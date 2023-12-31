@@ -66,12 +66,12 @@ class ProfileSerializer(serializers.ModelSerializer):
             self.Meta.depth = 3
 
 class ChatMessageSerializer(serializers.ModelSerializer): 
-    receiver_profile = ProfileSerializer(read_only=True)
+    reciever_profile = ProfileSerializer(read_only=True)
     sender_profile = ProfileSerializer(read_only=True)
     
     class Meta:
         model = ChatMessage
-        fields = ['id', 'sender', 'reciever', 'reciever_profile', 'sender_profile', 'message', 'is_read', 'date']
+        fields = ['id', 'user', 'sender', 'reciever', 'reciever_profile', 'sender_profile', 'message', 'is_read', 'date']
             
     def __init__(self, *args, **kwargs): 
         super(ChatMessageSerializer, self).__init__(*args, **kwargs)
@@ -81,3 +81,4 @@ class ChatMessageSerializer(serializers.ModelSerializer):
             self.Meta.depth = 0 
         else: 
             self.Meta.depth = 2
+            
